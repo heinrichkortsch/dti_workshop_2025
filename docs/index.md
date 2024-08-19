@@ -8,6 +8,8 @@ nav_order: 0
 
 This website will accompany you throughout the workshop and beyond. It serves as your central resource, containing tutorials, documentation, and more.
 
+![Pinout Diagram](components/grove-shield/assets/pi-pico-w-pinout.jpg)
+
 ### This is what's documented here:
 
 * **Pi Pico W Microcontroller**: A powerful, low-cost microcontroller. We will be running it with **CircuitPython**, but it also supports other languages, such as Arduino.
