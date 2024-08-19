@@ -1,0 +1,9 @@
+// Remove alignment issues for multi-row illustrations in tables
+.multi-graphic-justify {
+  display: flex;
+  flex-direction: column;
+}
+
+.multi-graphic-justify:last-child {
+  margin-top: 12px;
+}
