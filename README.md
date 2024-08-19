@@ -10,5 +10,5 @@ It relies on the following hardware resources:
 
 ## URL
 
-This GitHub Page is available at https://placeholder/. 
+This GitHub Page is available at https://adriaanb.github.io/dti_workshop/. 
 
