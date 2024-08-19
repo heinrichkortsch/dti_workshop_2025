@@ -1,0 +1,29 @@
+remote_theme: just-the-docs/just-the-docs
+
+title: Microcontroller Workshop DTI '24
+color_scheme: summer-school
+
+callouts_level: quiet
+callouts:
+  highlight:
+    color: green
+  highlight-yellow:
+    color: yellow
+  important:
+    title: Important
+    color: blue
+  new:
+    title: New
+    color: green
+  note:
+    title: Note
+    color: green
+  note-purple:
+    title: Note
+    color: purple
+  warning:
+    title: Warning
+    color: red
+
+plugins:
+  - jekyll-redirect-from
