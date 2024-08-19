@@ -10,21 +10,8 @@ This website will accompany you throughout the workshop and beyond. It serves as
 
 ![Pinout Diagram](components/grove-shield/assets/pi-pico-w-pinout.jpg)
 
-### This is what's documented here:
-
-* **Pi Pico W Microcontroller**: A powerful, low-cost microcontroller. We will be running it with **CircuitPython**, but it also supports other languages, such as Arduino.
-
-  
-
-* **Grove Shield for Pi Pico**: A base board for your Pi Pico W allowing you to connect components to it without the need to solder.
-
-  
-
-* A number of Grove-compatible components.
-
-The Pi Pico W Microcontroller you received during the workshop already runs CircuitPython, so you can just connect it to your computer and start exploring. If you are using your own Pi Pico Microcontroller, you first need to install CircuitPython on it.
-
-With that being said, have fun and be curious!
+{: .important }
+The Pi Pico W Microcontroller you received during the workshop already runs CircuitPython, so you can just connect it to your computer and start exploring. If you are using your own Pi Pico Microcontroller, you first need to install CircuitPython on it.  
 
 {: .highlight }
 Code examples provided on this page are written for **Pi Pico W** running **CircuitPython 9**.
