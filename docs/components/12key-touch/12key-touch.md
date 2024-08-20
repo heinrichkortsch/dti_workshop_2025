@@ -11,7 +11,9 @@ has_children: false
 # Capacitive Touch Sensor (MPR121)
 <a href="../../glossary/glossary"><img src="../../glossary/assets/input.png" alt="Input" width="72"/></a> <a href="../../glossary/glossary"><img src="../../glossary/assets/iic.png" alt="Digital" width="72"/></a>
 
-Lorem https://www.seeedstudio.com/Grove-12-Key-Capacitive-I2C-Touch-Sensor-V2-MPR121.html
+This Capacitive Touch Sensor allows you to transform everyday objects into touch interfaces. When you touch any sufficiently conductive material (such as fruit, foil, or even your own body) connected to its pins, the sensor detects a change in capacitance, which you can use to trigger a response in your code. Below is a short example that prints "Touched" to the Serial Monitor whenever any of the sensor's channels detects a change.
+
+Note that the sensor establishes a "baseline" for capacitance when the microcontroller is powered on. If you make any changes to the connected objects' "neutral" state, you will need to restart the microcontroller for the sensor to recalibrate and function correctly.
 
 ---
 

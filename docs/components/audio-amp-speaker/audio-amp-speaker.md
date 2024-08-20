@@ -19,7 +19,9 @@ has_children: false
 
 ## Background
 
+The [Adafruit STEMMA Speaker](https://www.adafruit.com/product/3885) board is an easy solution for adding sound to your project. As the name suggests, it features a built-in class D audio amplifier, paired with a compact 1 Watt 8 ohm speaker. This setup provides clear audio output for various applications, whether you're adding sound effects, voice prompts, or simple tunes to your project. 
 
+The examples below show how to use PWM pin **GP9** to play an MP3 file stored on your `CIRCUITPY` drive. You can use services such as [TTSMP3](https://ttsmp3.com/ai) to create short MP3 files with speech prompts.
 
 ## Basic Usage
 
@@ -54,27 +56,50 @@ while True:
 
 ## Advanced Usage
 
+Here, we'll use a button connected to **GP16 ** to cycle through three MP3 files.
+
 ```python
 # --- Imports
 import board
 import audiomp3
 import audiopwmio
+import digitalio
+import time
 
 # --- Variables
 audio = audiopwmio.PWMAudioOut(board.GP9)
-decoder = audiomp3.MP3Decoder(open("picohello.mp3", "rb"))
+
+mp3_files = ["first.mp3", "second.mp3", "third.mp3"]  # List of MP3 files
+file_index = 0  # Index to track the current MP3 file
+
+decoder = audiomp3.MP3Decoder(open(mp3_files[file_index], "rb"))
+
+button = digitalio.DigitalInOut(board.GP16)
+button.direction = digitalio.Direction.INPUT
 
 # --- Functions
+def play_next_mp3():
+    global file_index, decoder
 
-# --- Setup
+    audio.stop()
+    decoder.file.close()
+    file_index = (file_index + 1) % len(mp3_files)
+    
+    # Print the name of the file being played
+    print(f"Now playing: {mp3_files[file_index]}")
+
+    # Open the next MP3 file and create a new decoder, and play it
+    decoder = audiomp3.MP3Decoder(open(mp3_files[file_index], "rb"))
+    audio.play(decoder)
 
 # --- Main loop
 while True:
-    audio.play(decoder)
+    if button.value:
+        play_next_mp3()
+
+    # Wait until the current audio file finishes playing
     while audio.playing:
         pass
-        
-    print("Done playing!")
     
-    time.sleep(10)
+    time.sleep(0.1)  # Small delay to avoid rapid cycling
 ```

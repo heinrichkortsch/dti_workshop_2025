@@ -24,3 +24,7 @@ Expands the capabilities of your microcontroller by providing solderless Grove c
 * WiFi Radio
 
 > NOTE: In shingled pin headers, each header's second pin is shared with the first pin in the header above it. Therefore, using one disables the other. For instance, using pins A0 and A1 in the  A1-labeled header disallows the use of A0 in the A0-labeled header.
+
+
+
+![Pinout Diagram](assets/pi-pico-w-pinout.jpg)

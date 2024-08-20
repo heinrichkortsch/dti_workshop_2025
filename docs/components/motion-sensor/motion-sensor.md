@@ -11,7 +11,9 @@ has_children: false
 # Motion Sensor
 <a href="../../glossary/glossary"><img src="../../glossary/assets/input.png" alt="Input" width="72"/></a> <a href="../../glossary/glossary"><img src="../../glossary/assets/digital.png" alt="Digital" width="72"/></a>
 
-Lorem
+This PIR Motion Sensor is designed to detect human motion by measuring infrared radiation emitted by objects in its field of view. It operates as a digital component, making it simple to use in code. If the sensor value you read is `True`, a motion is being detected. `False` means no motion is detected.   
+
+The sensor has a detecting angle of 100 degrees and can sense motion at distances ranging from 3.2 meters to 12 meters.
 
 ---
 

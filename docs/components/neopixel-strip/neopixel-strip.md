@@ -11,7 +11,7 @@ has_children: false
 # Neopixel RGB LED Strip
 <a href="../../glossary/glossary"><img src="../../glossary/assets/output.png" alt="Output" width="72"/></a> <a href="../../glossary/glossary"><img src="../../glossary/assets/digital.png" alt="Digital" width="72"/></a>
 
-A light source that can produce RGB colored and white light. Can be daisy chained. 
+A light source that can produce RGB colored light. 
 
 This is a section of an [Adafruit Neopixel RGB LED strip](https://www.adafruit.com/product/2541) with a Grove connector. Extensive information on NeoPixel components and their use is available [here](https://learn.adafruit.com/adafruit-neopixel-uberguide/the-magic-of-neopixels).
 
@@ -22,7 +22,7 @@ This is a section of an [Adafruit Neopixel RGB LED strip](https://www.adafruit.c
 To easily control these NeoPixel RGB LED's in your code, the `neopixel` [library](../../glossary/glossary) is needed. The library should be pre-loaded on your Raspberry Pi Pico.
 
 {: .highlight }
-You can verify that the library is installed by ensuring a file called `neopixel.mpy` is present in the `lib` folder of your `CIRCUITPY` drive. If not, download Adafruit's Library Bundle for Version 9.x [here](https://circuitpython.org/libraries). Extract the needed file from the bundle and place it in the `lib` folder on your microcontroller. You can learn more about libraries and their use in the [Glossary](../../glossary/glossary) or the [../../Tutorials](/Tutorials).
+You can verify that the library is installed by ensuring a file called `neopixel.mpy` is present in the `lib` folder of your `CIRCUITPY` drive. If not, download Adafruit's Library Bundle for Version 9.x [here](https://circuitpython.org/libraries). Extract the needed file from the bundle and place it in the `lib` folder on your microcontroller. You can learn more about libraries and their use in the [Glossary](../../glossary/glossary) or the [Tutorials](../../tutorials).
 
 The examples below assume your component is connected to the connector **GP20** on the Grove Shield.
 
