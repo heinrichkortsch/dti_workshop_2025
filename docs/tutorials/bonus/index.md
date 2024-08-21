@@ -1,21 +1,22 @@
 ---
 layout: default
-title: "Bonus: Reaction Game Code"
+title: "Bonus: Reaction Game"
 parent: "Tutorials"
 nav_order: 5
 has_children: true
 ---
 
 
-# Bonus: Reaction Game Code
+# Bonus: Reaction Game
 
-On this page, you can find a simple reaction game code. 
+On this page, you can find the code for a simple reaction game. 
 
 This basic game makes use of two digital input components (for instance, a Tactile Switch), and an RGB LED as an output.
 
 Once the LED turns white, both players have to try and touch their sensor as quick as possible. Whoever is faster wins the round, and the LED will  light up in the corresponding color (red or blue).
 
 Try to see if you can understand the code and build a prototype that makes use of it. Feel free to use it as a basis for modification, creating your own game logic and behavior.
+
 
 ```python
 ##--- Imports
@@ -107,3 +108,5 @@ while True:
         current_state = state_wait
 ```
 
+{:.note}
+The original source of this reaction game code can be found [here](https://id-studiolab.github.io/Digital-Interfaces/assignments/02-reaction-game/).
