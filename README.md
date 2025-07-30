@@ -1,6 +1,6 @@
 # Microcontroller Workshop Web Resource
 
-This repository hosts an educational website that provides easily accessible information assisting students in the creation of technology-mediated experiences. It is used in the context of a one-day workshop and serves as the go-to resource for the duration of the workshop and beyond.
+This repository hosts an educational website that provides easily accessible information assisting students in the creation of technology-mediated experiences. It is used in the context of a two-day workshop and serves as the go-to resource for the duration of the workshop and beyond.
 
 It relies on the following hardware resources:
 
@@ -10,5 +10,5 @@ It relies on the following hardware resources:
 
 ## URL
 
-This GitHub Page is available at https://adriaanb.github.io/dti_workshop/. 
+This GitHub Page is available at https://heinrichkortsch.github.io/dti_workshop_2025/. 
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Tutorials
+title: Part 1: Tutorials
 nav_order: 1
 has_children: true
 has_toc: false
