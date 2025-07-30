@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Preparation"
-parent: "Tutorials"
+parent: "Part 1: Tutorials"
 nav_order: 1
 has_children: true
 ---

@@ -2,7 +2,7 @@
 layout: default
 title: "Part 2 - Change the way your code behaves"
 parent: "Let There Be Light!"
-grand_parent: "Tutorials"
+grand_parent: "Part 1: Tutorials"
 ---
 
 # Part 2 - Change the way your code behaves

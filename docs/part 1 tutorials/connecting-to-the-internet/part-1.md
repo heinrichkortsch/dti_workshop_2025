@@ -2,7 +2,7 @@
 layout: default
 title: "Part 1 - Scan for Available Networks"
 parent: "Connecting To The Internet"
-grand_parent: "Tutorials"
+grand_parent: "Part 1: Tutorials"
 ---
 
 # Part 1 - Scan for Available Networks

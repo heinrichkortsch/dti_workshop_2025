@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Part 3: Experience ML
+title: "Part 3: Experience ML"
 nav_order: 4
 has_children: true
 has_toc: false

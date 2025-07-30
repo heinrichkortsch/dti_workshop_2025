@@ -2,7 +2,7 @@
 layout: default
 title: "Part 2 - Add an Output Component"
 parent: "Adding Inputs and Outputs"
-grand_parent: "Tutorials"
+grand_parent: "Part 1: Tutorials"
 ---
 
 # Part 2 - Add an Output Component

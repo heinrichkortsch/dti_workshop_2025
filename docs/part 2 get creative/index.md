@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Part 2: Get Creative!
+title: "Part 2: Get Creative!"
 nav_order: 3
 has_children: true
 has_toc: false

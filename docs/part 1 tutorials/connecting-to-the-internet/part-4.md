@@ -2,7 +2,7 @@
 layout: default
 title: "Part 4 - Advanced Example"
 parent: "Connecting To The Internet"
-grand_parent: "Tutorials"
+grand_parent: "Part 1: Tutorials"
 ---
 
 # Advanced Example: Get Weather Data

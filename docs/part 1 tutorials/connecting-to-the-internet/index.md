@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Connecting To The Internet"
-parent: "Tutorials"
+parent: "Part 1: Tutorials"
 nav_order: 4
 has_children: true
 ---

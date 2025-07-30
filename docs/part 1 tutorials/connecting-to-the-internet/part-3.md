@@ -2,7 +2,7 @@
 layout: default
 title: "Part 3 - Get Data from the Internet"
 parent: "Connecting To The Internet"
-grand_parent: "Tutorials"
+grand_parent: "Part 1: Tutorials"
 ---
 
 # Part 3 - Get Data from the Internet

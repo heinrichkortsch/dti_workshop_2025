@@ -3,7 +3,7 @@ layout: default
 title: "Installing Mu Editor"
 parent: "Preparation"
 nav_order: 2
-grand_parent: "Tutorials"
+grand_parent: "Part 1: Tutorials"
 ---
 
 # Installing Mu Editor

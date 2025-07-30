@@ -3,7 +3,7 @@ layout: default
 title: "Tools and Equipment"
 parent: "Preparation"
 nav_order: 1
-grand_parent: "Tutorials"
+grand_parent: "Part 1: Tutorials"
 ---
 
 # Tools and Equipment

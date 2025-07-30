@@ -2,7 +2,7 @@
 layout: default
 title: "Part 1 - Load the program code using Mu Editor"
 parent: "Let There Be Light!"
-grand_parent: "Tutorials"
+grand_parent: "Part 1: Tutorials"
 ---
 
 # Part 1 - Load the program code using Mu Editor

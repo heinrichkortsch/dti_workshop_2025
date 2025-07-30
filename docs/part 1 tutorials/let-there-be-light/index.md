@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Let There Be Light!"
-parent: "Tutorials"
+parent: "Part 1: Tutorials"
 nav_order: 2
 has_children: true
 ---

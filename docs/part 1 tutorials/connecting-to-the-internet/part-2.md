@@ -2,7 +2,7 @@
 layout: default
 title: "Part 2 - Connect to a WiFi Network"
 parent: "Connecting To The Internet"
-grand_parent: "Tutorials"
+grand_parent: "Part 1: Tutorials"
 ---
 
 # Part 2 - Connect to a WiFi Network

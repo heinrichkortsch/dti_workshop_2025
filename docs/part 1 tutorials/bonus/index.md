@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Bonus: Reaction Game"
-parent: "Tutorials"
+parent: "Part 1: Tutorials"
 nav_order: 5
 has_children: true
 ---
