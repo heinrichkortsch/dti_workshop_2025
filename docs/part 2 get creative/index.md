@@ -14,9 +14,9 @@ It is time to start your own prototyping journey. As
 
 ---
 
-## Overview
+## Reminder
 
-Remember: For references on using specific components, jump to the Components section:
+For references on using specific components, jump to the Components section:
 
 [Component Overview](../components/){: .btn}
 

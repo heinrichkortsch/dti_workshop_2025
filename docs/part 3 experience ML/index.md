@@ -6,7 +6,7 @@ has_children: true
 has_toc: false
 ---
 
-# Part 2: Experience ML
+# Part 3: Experience ML
 
 It is time to start your own prototyping journey. As
 
@@ -14,9 +14,9 @@ It is time to start your own prototyping journey. As
 
 ---
 
-## Overview
+## Reminder
 
-Remember: For references on using specific components, jump to the Components section:
+For references on using specific components, jump to the Components section:
 
 [Component Overview](../components/){: .btn}
 
