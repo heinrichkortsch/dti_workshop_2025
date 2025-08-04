@@ -8,6 +8,8 @@ has_toc: false
 
 # Part 2: Get Creative! Building & Prototyping
 
+![Titel Picture](assets/part2_title.png)
+
 Welcome to Part 2 of our workshop!  
 Now that you have completed the tutorial section and explored the basics, it's time for hands-on prototyping and some creative experimentation.
 
@@ -36,10 +38,11 @@ Feel free to combine and experiment with any parts you like!
 
 Here are some for practical, ready-to-use examples you can use as a starting point: 
 
-- [Idea 1](./idea-1.md)
-- [Idea 2](./idea-1.md)
-- [Idea 3](./idea-1.md)
-- [Idea 4](./idea-1.md)
+- [Idea 1](./idea-1.md): Alarm System
+- [Idea 2](./idea-2.md): Capacitive Touch Fruit Piano
+- [Idea 3](./idea-3.md): Water / Wind Station for Energy Production
+- [Idea 4](./idea-4.md): Reaction Game 
+- ...
 
 Let’s create and learn together — enjoy building, prototyping, and sharing your ideas!
 
@@ -47,7 +50,7 @@ Let’s create and learn together — enjoy building, prototyping, and sharing y
 
 ## Need Help?
 
-There are several ways for you to get some support:
+There are several ways for you to get some help with your prototypes:
 
 1. We have trained a Custom GPT for you that will help you with specific questions, especially reagarding your python-code: [dtiGPT](https://chatgpt.com){: .btn}
 

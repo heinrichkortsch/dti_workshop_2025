@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "Idea 1 - TBD"
+title: "Idea 4 - TBD"
 parent: "Part 2: Get Creative! Building & Prototyping"
 ---
 
-# Idea 1 – TBD
+# Idea 4 – TBD
 
 ...  
 
