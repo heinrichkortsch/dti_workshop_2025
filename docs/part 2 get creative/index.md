@@ -8,10 +8,16 @@ has_toc: false
 
 # Part 2: Get Creative! Building & Prototyping
 
-![Titel Picture](assets/part2_title.png)
+<div style="display: flex; align-items: center; gap: 20px;">
+  <img src="assets/part2_title.png" alt="Title Picture" style="width: 150px; height: auto;" />
+  <div>
+    <p>
+      Welcome to Part 2 of our workshop! <br>
+      Now that you have completed the tutorial section and explored the basics, it's time for hands-on prototyping and some creative experimentation.
+    </p>
+  </div>
+</div>
 
-Welcome to Part 2 of our workshop!  
-Now that you have completed the tutorial section and explored the basics, it's time for hands-on prototyping and some creative experimentation.
 
 ---
 
