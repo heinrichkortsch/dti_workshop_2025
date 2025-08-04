@@ -131,7 +131,7 @@ while True:
 
 ---
 
-{: .highlight }  **Need help?**
+ **Need help?**
 
 There are several ways for you to get some help with your prototypes:
 
@@ -144,3 +144,5 @@ There are several ways for you to get some help with your prototypes:
     [Component Overview](../components/){: .btn}
 
 3. Your workshop instructors are of course happy to help. Don't worry: Go ahead and ask your question.
+
+{: .highlight }
