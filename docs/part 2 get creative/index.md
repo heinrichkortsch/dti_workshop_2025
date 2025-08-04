@@ -11,13 +11,13 @@ has_toc: false
 ## Welcome to Part 2 of our workshop! 
 
 <div style="display: flex; align-items: center; gap: 20px;">
-  <img src="assets/part2_title.png" alt="Title Picture" style="width: 200px; height: auto;" />
   <div>
     <p>
       <br>
       Now that you have completed the tutorial section and explored the basics, it's time for hands-on prototyping and some creative experimentation.
     </p>
   </div>
+  <img src="assets/part2_title.png" alt="Title Picture" style="width: 200px; height: auto;" />
 </div>
 
 
