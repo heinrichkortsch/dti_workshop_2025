@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Idea 4 - TBD"
+title: "Idea 4 - Reaction Game"
 parent: "Part 2: Get Creative! Building & Prototyping"
 ---
 
