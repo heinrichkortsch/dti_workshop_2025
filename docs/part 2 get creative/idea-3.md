@@ -10,7 +10,7 @@ parent: "Part 2: Get Creative! Building & Prototyping"
 
 ---
 
-## Need Help?
+{: .highlight }  **Need help?**
 
 There are several ways for you to get some help with your prototypes:
 

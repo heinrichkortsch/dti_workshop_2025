@@ -131,7 +131,7 @@ while True:
 
 ---
 
-## Need Help?
+{: .highlight }  **Need help?**
 
 There are several ways for you to get some help with your prototypes:
 

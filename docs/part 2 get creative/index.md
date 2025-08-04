@@ -9,7 +9,7 @@ has_toc: false
 # Part 2: Get Creative! Building & Prototyping
 
 <div style="display: flex; align-items: center; gap: 20px;">
-  <img src="assets/part2_title.png" alt="Title Picture" style="width: 150px; height: auto;" />
+  <img src="assets/part2_title.png" alt="Title Picture" style="width: 200px; height: auto;" />
   <div>
     <p>
       Welcome to Part 2 of our workshop! <br>
@@ -53,7 +53,7 @@ Here are some for practical, ready-to-use examples you can use as a starting poi
 
 ---
 
-## Need Help?
+{: .highlight }  **Need help?**
 
 There are several ways for you to get some help with your prototypes:
 

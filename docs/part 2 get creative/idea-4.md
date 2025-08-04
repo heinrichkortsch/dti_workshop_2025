@@ -177,7 +177,7 @@ The original source of this reaction game code can be found [here](https://id-st
 
 ---
 
-## Need Help?
+{: .highlight }  **Need help?**
 
 There are several ways for you to get some help with your prototypes:
 
