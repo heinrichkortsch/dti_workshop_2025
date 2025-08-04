@@ -25,12 +25,11 @@ The aim here is to give you practical experience by **building your own simple p
 1. **Choose a project idea** from the list below, or start your own.
 2. **Build the basic version first.** This helps you get familiar with both hardware and software aspects.
 3. **Take it further:** Each project idea comes with suggestions on how to extend, modify, or personalize your prototype.
-4. **Start your own!**
+4. **Get creative:** Use or combine the ideas and suggestions, research the web or use your own imagination to start your own prototype.
 
 ## Components – What can you use?
 
-You can use all hardware listed on the [Components](../components.md) page.  
-Feel free to combine and experiment with any parts you like!
+You can use all hardware listed on the [Components](../components.md) page. Feel free to combine and experiment with any parts you like!
 
 *If you have suggestions for other interesting components for future workshops, just let us know!*
 
@@ -44,7 +43,7 @@ Here are some for practical, ready-to-use examples you can use as a starting poi
 - [Idea 4](./idea-4.md): Reaction Game 
 - ...
 
-Let’s create and learn together — enjoy building, prototyping, and sharing your ideas!
+> Let’s create and learn together — enjoy building, prototyping, and sharing your ideas!
 
 ---
 
@@ -52,8 +51,12 @@ Let’s create and learn together — enjoy building, prototyping, and sharing y
 
 There are several ways for you to get some help with your prototypes:
 
-1. We have trained a Custom GPT for you that will help you with specific questions, especially reagarding your python-code: [dtiGPT](https://chatgpt.com){: .btn}
+1. We have trained a custom ChatGPT-Agent for you that will help you with any questions. This is especially helpful reagarding your python-code:
 
-2. For references on using specific components, jump to the Components section: [Component Overview](../components/){: .btn}
+    [DTI Workshop Helper](https://chatgpt.com/g/g-6890968826808191b1bccc15d0e6a983-dti-workshop-helper){: .btn}
+
+2. For references on using specific components, jump to the Components section: 
+
+    [Component Overview](../components/){: .btn}
 
 3. Your workshop instructors are of course happy to help. Don't worry: Go ahead and ask your question.
