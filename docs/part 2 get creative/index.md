@@ -17,7 +17,7 @@ Now that you have completed the tutorial section and explored the basics, it's t
 
 ## What’s the goal of this part?
 
-The aim here is to give you practical experience by **building your own simple prototypes** with the components available. To spark your creativity, we offer a selection of project ideas you can use as starting points. Feel free to build them as described, expand and modify them, or even come up with something entirely your own. You are encouraged to experiment, combine components, and take ideas in new directions — whatever inspires you most!
+The aim here is to give you practical experience by **building your own prototypes** with the components available. To spark your creativity, we offer a selection of project ideas you can use as starting points. Feel free to build them as described, expand and modify them, or even come up with something entirely your own. You are encouraged to experiment, combine components, and take ideas in new directions — whatever inspires you most!
 
 
 ## How does it work?
@@ -38,8 +38,8 @@ You can use all hardware listed on the [Components](../components.md) page. Feel
 Here are some for practical, ready-to-use examples you can use as a starting point: 
 
 - [Idea 1](./idea-1.md): Alarm System
-- [Idea 2](./idea-2.md): Capacitive Touch Cardboard Piano
-- [Idea 3](./idea-3.md): Water / Wind Station for Energy Production
+- [Idea 2](./idea-2.md): Cardboard Piano (Capacitive Touch)
+- [Idea 3](./idea-3.md): Energy Production with Water/Wind
 - [Idea 4](./idea-4.md): Reaction Game 
 - ...
 
