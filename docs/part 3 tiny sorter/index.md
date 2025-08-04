@@ -7,7 +7,7 @@ has_toc: false
 ---
 # Part 3: Machine Learning meets Microcontrollers -  "Tiny Sorter"
 
-
+![Video: Tiny Sorter](assets/video0.mp4)
 
 Welcome to the “Tiny Sorter” project, an interactive machine learning–enabled sorting machine adapted for the DTI Summer School 2025!
 
@@ -40,16 +40,16 @@ A simple, DIY machine will sort objects on a cardboard-based channel, using a we
 
 In the upcoming sections we will create the Tiny Sorter Step-by-Step. Here is a quick overview of what we are going to do:
 
-1. [Building](step-1){: .btn .btn-blue }: Build the simple mechanical sorter according to the guide.
-2. [Training](step-2){: .btn .btn-blue }: Train  a ML model in your browser to recognize two object classes.
-3. [Setup](step-3){: .btn .btn-blue }: Connect your Pico and start the provided Python code, to get everything ready for Sorting.
-4. [Testing](step-4){: .btn .btn-blue }: Test and use your Tiny Sorter to sort objects with the power of Machine Learning. There might be some troubleshooting necessary.
-5. [Adaption](step-5){: .btn .btn-blue } (Bonus): Your Tiny Sorter works? Great! Now if you feel up for the task try to modify, adapt or extend the Tiny Sorter.
+1. [Building](step-1): Build the simple mechanical sorter according to the guide.
+2. [Training](step-2): Train  a ML model in your browser to recognize two object classes.
+3. [Setup](step-3): Connect your Pico and start the provided Python code, to get everything ready for Sorting.
+4. [Testing](step-4): Test and use your Tiny Sorter to sort objects with the power of Machine Learning. There might be some troubleshooting necessary.
+5. [Adaption (Bonus)](step-5): Your Tiny Sorter works? Great! Now if you feel up for the task try to modify, adapt or extend the Tiny Sorter.
 
 Happy building and experimenting!
 
 
 ## Next Steps
 
-- Start with [Step 1 to build your Tiny Sorter](step-1){: .btn .btn-blue }.
+[Start with Step 1 to build your Tiny Sorter!](step-1){: .btn .btn-blue }.
 

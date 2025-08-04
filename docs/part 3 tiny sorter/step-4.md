@@ -11,4 +11,6 @@ parent: "Part 3: Machine Learning meets Microcontrollers"
 
 Using the [Web Serial API](https://developer.chrome.com/docs/capabilities/serial/), the ML model sends class predictions to the Pico, which moves the servo to sort objects accordingly.
 
-[Next Step](step-5){: .btn .btn-blue }
+Your Tiny Sorter works? Good Job! You are done...
+
+[Continue with Step 5 (optional) to modify, adapt or extend your Tiny Sorter!](step-1){: .btn .btn-blue }.

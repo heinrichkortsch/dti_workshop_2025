@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "Step 1 - Build the Tiny Sorter"
+title: "Step 2 - Train the ML Model"
 parent: "Part 3: Machine Learning meets Microcontrollers"
 ---
 
-# Step 1 - Build the Tiny Sorter
+# Step 2 - Train the ML Model
 
 The code in this tutorial is similar to the program you saw before. This time, you will write it yourself to better understand what you are doing.
 
@@ -33,4 +33,6 @@ while True:
 {:.note}
 [Libraries](../../glossary/glossary) and [modules](../..glossary/glossary) contain code written by other people to fulfill specific tasks. Core modules, such as `board`, `digitalio`, and `time` provide functionality essential to working with your board. Therefore, they are already included in CircuitPython. In some cases, you may need to download additional libraries to add functionality, such as drivers for specific sensors, to your code. You can learn more about that subject by reading the chapter on CircuitPython Libraries in [Adafruit's guide](https://learn.adafruit.com/welcome-to-circuitpython/circuitpython-libraries). 
 
-[Next Step](step-2){: .btn .btn-blue }
+## Next Steps
+
+[Continue with step 3 to get everything set up!](step-3){: .btn .btn-blue }.
