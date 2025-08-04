@@ -43,15 +43,15 @@ Start by watching the videos below, which walks you through every step of the as
 
 
 
-## Step 1: Cut it out
+## 1. Cut it out
 ![Video: Cut Out](assets/video1.mp4)
 
-## Step 2: Fold it up
+## 2. Fold it up
 ![Video: Fold it up](assets/video2.mp4)
 
 > **Note:** In this shot, they are using a pencil to crease the paper and make it easier to fold. This is highly recommended.
 
-## Step 3: Tape it together
+## 3. Tape it together
 ![Video: Tape it together](assets/video3.mp4)
 
 > **Note:** The video shows how to build the sorter using an Arduino (a different microcontroller similar to our Raspberry Pi Pico ). Focus now on building the physical parts — connection differences are explained in a later step.

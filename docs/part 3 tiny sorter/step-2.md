@@ -6,33 +6,79 @@ parent: "Part 3: Machine Learning meets Microcontrollers"
 
 # Step 2 - Train the ML Model
 
-The code in this tutorial is similar to the program you saw before. This time, you will write it yourself to better understand what you are doing.
+## What is Google Teachable Machine?
 
-![Wiring Diagram Touch Sensor](assets/io_tactile.png)
+> **Note/Highlight:**  
+> In this step, you'll see how to train a computer to tell objects apart—using nothing but your webcam and a website, no programming required!  
+>
+> We use [Google Teachable Machine](https://teachablemachine.withgoogle.com/), a free, web-based tool that lets anyone — even if you’ve never coded before — teach a machine learning (ML) model to recognize objects, sounds, or poses.  
+> Under the hood, Teachable Machine uses a simplified version of **[TensorFlow.js](https://www.tensorflow.org/js)**, a technology for running machine learning directly in your browser.
+>
+> **What’s a “machine learning model”?**  
+> It’s like a super-powerful sorting rule. You show the computer lots of examples (e.g., photos of Block A, Block B …), and it “learns” how to tell them apart. Afterwards it can say things like: “I’m 95% sure this is Block A!”  
+>
+> In this workshop, our ML model looks at your webcam feed, decides which object it “sees,” and then sends that info to the Tiny Sorter for action.
+>
+> - If you're new to ML and interested, you can read this [beginner’s guide](https://developers.google.com/machine-learning/crash-course/ml-intro) to explore the main ideas.
+> - For the curious: Our model uses a so-called **neural network**, trained in real-time and run using JavaScript in the browser. Learn more about [neural nets](https://en.wikipedia.org/wiki/Artificial_neural_network).
 
-1. Begin by connecting your Pi Pico W to the computer. We want to start this tutorial with an empty `code.py` file on your `CIRCUITPY` drive, so you need to delete or rename the existing one. For instance, you can use your computer’s file manager to give the old file from the last tutorial the name `blink_code.py`. Remember that your microcontroller will only execute code stored in a file named `code.py`.
-2. Temporarily disconnect your Pi Pico W from the computer. Use a Grove cable to connect the Touch Sensor to the pin connector labeled **`GP16`** on the included pinout diagram, as shown in the illustration above.
-3. Reconnect your Pi Pico W, then open Mu Editor. Click the `New` button in the toolbar at the top to create a new file. Then click `Save` to store your new file on the `CIRCUITPY` drive, naming it `code.py`.  
-4. Follow along with the code example at the bottom of this page by beginning your program with `import` statements. These inform your board about additional instruction sets your code needs to work. These instruction sets are called [libraries](../../glossary/glossary) or [modules](../..glossary/glossary). You need to import three modules: `board` tells your program about the pins available on your microcontroller and their names. `digitalio` contains functions necessary for working with digital inputs and outputs. `time` allows your code to use timing-related functionality.
-5. To make the Touch Sensor you connected in step 2 work, you first need to create a container to store the data coming from the sensor. Such a container is called a [variable](../../glossary/glossary). Variables are created by assigning a name to something: From now on, `sensor` will store a `digitalio` [object](../../glossary/glossary) attached to pin **`GP16`**. In the following line of code, you define the value stored in `sensor` to be read from an `INPUT`, not written to an output.
-6. As before, you end your program with a `while` loop whose condition is set to `True`. Inside this endlessly repeating loop, you use a `print` statement to display the `sensor.value` in the `Serial Monitor` each time the code repeats. Using a sleep timer, you slow down the speed of the loop so as not to overwhelm Mu’s Serial Monitor with more messages than it can handle.
+---
 
-```python
-import board
-import digitalio
-import time
+## Step-by-Step Guide: Training Your Model
 
-sensor = digitalio.DigitalInOut(board.GP16)
-sensor.direction = digitalio.Direction.INPUT
+Below you'll find the main steps for training your Tiny Sorter ML model with Teachable Machine. For each part, watch the video or view the image, then follow the instructions.
 
-while True:
-    print(sensor.value)
-    time.sleep(0.1)
-```
+---
 
-{:.note}
-[Libraries](../../glossary/glossary) and [modules](../..glossary/glossary) contain code written by other people to fulfill specific tasks. Core modules, such as `board`, `digitalio`, and `time` provide functionality essential to working with your board. Therefore, they are already included in CircuitPython. In some cases, you may need to download additional libraries to add functionality, such as drivers for specific sensors, to your code. You can learn more about that subject by reading the chapter on CircuitPython Libraries in [Adafruit's guide](https://learn.adafruit.com/welcome-to-circuitpython/circuitpython-libraries). 
+### 1. Create a new Teachable Machine Project
 
-## Next Steps
+- Go to [https://teachablemachine.withgoogle.com/](https://teachablemachine.withgoogle.com/).
+- Click on **“Get Started”**, then **“Image Project”**, and choose **“Standard Image Model”**.
+  
+![Video: TM Video 1](assets/TM_video1.mov)
+
+---
+
+### 2. Set Up Your Classes
+
+- You’ll see two default “classes”—rename them to match your object types, e.g., "Item A” and “Item B”.
+- For our Tiny Sorter you have to created a third Class, e.g. "No Item", which we will use to train the model to recognize situations when there is no item to be sorted.
+
+![Video: TM Video 2](assets/TM_video2.mov)
+---
+
+### 3. Record Training Data
+
+- For each class, use your webcam to **capture at least 50 images**.
+  - Vary the angle, lighting, and distance as much as possible for best results!
+- Move the object around to help the computer “see” it in different positions and conditions.
+
+*Video or screenshot here*
+
+---
+
+### 4. Train Your Model
+
+- Click the **“Train Model”** button.
+- Your browser will process the images and build a lightweight neural network behind the scenes.
+- When done, you’ll see a live preview—hold up an object and watch the model try to classify it.
+
+*Video or screenshot here*
+
+---
+
+### 5. Export/Use the Model
+
+- After training, go to the **“Export Model”** area.
+- Choose **“Upload my model”** (makes it available online).
+- Copy the provided **model link** to use with our sorting interface (you’ll need it later in Step 3).
+
+*Video or screenshot here*
+
+---
+
+## Next Step
+
+Your model is now trained! Test it with your webcam before moving to the next step: setting up the electronics and connecting the Pi Pico.
 
 [Continue with step 3 to get everything set up!](step-3){: .btn .btn-blue }.

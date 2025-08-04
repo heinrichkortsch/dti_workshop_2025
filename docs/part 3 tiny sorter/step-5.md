@@ -8,9 +8,8 @@ parent: "Part 3: Machine Learning meets Microcontrollers"
 
 
 Some Ideas:
-- When Sorting, could there be two LED's that indicate 
+- When Sorting, could there be two LED's that indicate the direction
 - Fruther Train the Model 
 - Display
 - Counter
 
-[Next Step](part-2){: .btn .btn-blue }
