@@ -8,6 +8,8 @@ parent: "Part 2: Get Creative! Building & Prototyping"
 
 Build your own simple musical instrument! With just cardboard, aluminum foil, and your microcontroller, you’ll create a working touch piano—no traditional buttons needed. This project introduces you to capacitive touch sensing and fun creative electronics.
 
+![Cardboard Piano](./assets/piano02.jpg))
+
 ---
 
 ## What does the Cardboard Piano do?
@@ -41,7 +43,7 @@ For more information, see our [Touch Sensor Overview](../components/12key-touch/
 ## Components for the Base Piano
 
 - Microcontroller (e.g. Raspberry Pi Pico)
-- Cardboard piano template (provided at workshop)
+- [Cardboard piano template](./assets/touch_piano.pdf) (provided at workshop)
 - Aluminum foil (for the keys)
 - Jumper wires / crocodile clips
 - 1 M Ohm resistors (for each touch input)
