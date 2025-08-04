@@ -131,7 +131,8 @@ while True:
 
 ---
 
- ## Need help?
+### Need help?
+
 
 There are several ways for you to get some help with your prototypes:
 

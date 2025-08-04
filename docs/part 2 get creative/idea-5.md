@@ -22,7 +22,7 @@ All these ideas use only the standard kit components and serve as accessible sta
 
 ---
 
- ## Need help?
+### Need help?
 
 There are several ways for you to get some help with your prototypes:
 
