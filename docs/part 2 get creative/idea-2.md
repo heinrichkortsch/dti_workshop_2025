@@ -8,7 +8,7 @@ parent: "Part 2: Get Creative! Building & Prototyping"
 
 Build your own simple musical instrument! With just cardboard, aluminum foil, and your microcontroller, you’ll create a working touch piano—no traditional buttons needed. This project introduces you to capacitive touch sensing and fun creative electronics.
 
-![Cardboard Piano](./assets/piano02.jpg))
+![Cardboard Piano](./assets/piano02.jpg)
 
 ---
 
@@ -131,7 +131,7 @@ while True:
 
 ---
 
- **Need help?**
+ ## Need help?
 
 There are several ways for you to get some help with your prototypes:
 
@@ -145,4 +145,3 @@ There are several ways for you to get some help with your prototypes:
 
 3. Your workshop instructors are of course happy to help. Don't worry: Go ahead and ask your question.
 
-{: .highlight }

@@ -177,7 +177,7 @@ The original source of this reaction game code can be found [here](https://id-st
 
 ---
 
-{: .highlight }  **Need help?**
+ ## Need help?
 
 There are several ways for you to get some help with your prototypes:
 
@@ -191,4 +191,3 @@ There are several ways for you to get some help with your prototypes:
 
 3. Your workshop instructors are of course happy to help. Don't worry: Go ahead and ask your question.
 
-{: .highlight }
