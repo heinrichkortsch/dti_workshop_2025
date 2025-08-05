@@ -7,9 +7,19 @@ parent: "Part 2: Get Creative! Building & Prototyping"
 
 # Idea 2 - Reaction Game
 
-This is a simple but exciting two-player reaction game. It lets you practice coding basic logic, working with input and output hardware, and competing with a friend—all with minimal setup.
 
-![Advanced Build of the Reaction Game](./assets/reactiongame.mov)
+<div style="display: flex; align-items: center; gap: 20px;">
+  <div>
+    <p>
+      <br>
+    This is a simple but exciting two-player reaction game. It lets you practice coding basic logic, working with input and output hardware, and competing with a friend—all with minimal setup.
+    </p>
+  </div>
+  <img src="./assets/reactiongame.mov" alt="Advanced Build of the Reaction Game" style="width: 200px; height: auto;" />
+  
+</div>
+
+
 
 > The video above shows an advanced 4 Player build of the Reaction Game by [PenguinTutor](https://www.youtube.com/shorts/2sUVWSIK9SU?feature=share).
 
