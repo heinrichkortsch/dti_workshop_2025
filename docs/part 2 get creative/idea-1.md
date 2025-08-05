@@ -29,14 +29,14 @@ You can customize your alarm system with different sensors, lights, displays, or
 
 ## Components for the Base System
 
-- Microcontroller board (e.g. Raspberry Pi Pico)
-- Motion sensor (e.g. PIR sensor)
+- Microcontroller board (Raspberry Pi Pico)
+- Motion sensor (PIR sensor)
 - Buzzer or speaker
 - Connection cables
 
 ---
 
-## Other Components You May Use
+## Other Components You May Use Later
 
 You can personalize or extend your alarm system with:
 - LEDs (visual alarm, status indicators)
@@ -59,9 +59,8 @@ Check the [Components](../components.md) page for available parts.
 3. **Power and connect your board to your computer.**
 4. Other modules: Plug in LEDs, displays, or additional sensors as needed.
 
-*No extra resistors or manual assembly required for most modules. Just use the right ports and cables.*
 
-*___Insert wiring diagram or setup photo here___*
+[Alarm System Wiring](./assets/alarm_system_1.jpeg)
 
 ---
 
@@ -71,37 +70,45 @@ Here is a simple Python example for an alarm system using a motion sensor and bu
 
 ```python
 
-# Import necessary libraries to control pins and add time delays
+# --- Imports
 import digitalio
 import board
 import time
 
-# Setup the PIR motion sensor as an INPUT device (see Glossary: "Input")
-pir_pin = board.GP2  # The pin connected to the motion sensor output
-pir_sensor = digitalio.DigitalInOut(pir_pin)  # Configure pin to read digital signals (Input)
-pir_sensor.direction = digitalio.Direction.INPUT  # Set pin mode to INPUT
+# --- Variables
 
-# Setup the buzzer as an OUTPUT device (see Glossary: "Output")
-buzzer_pin = board.GP15  # The pin connected to the buzzer
-buzzer = digitalio.DigitalInOut(buzzer_pin)  # Configure pin to send digital signals (Output)
-buzzer.direction = digitalio.Direction.OUTPUT  # Set pin mode to OUTPUT
+# Set up the PIR motion sensor as INPUT (detects movement)
+pir_pin = board.GP2
+pir_sensor = digitalio.DigitalInOut(pir_pin)
+pir_sensor.direction = digitalio.Direction.INPUT
 
-# Main loop - program keeps running this code repeatedly (in a "loop")
+# Set up the buzzer as OUTPUT (makes sound)
+buzzer_pin = board.GP15
+buzzer = digitalio.DigitalInOut(buzzer_pin)
+buzzer.direction = digitalio.Direction.OUTPUT
+
+# --- Functions
+# (No functions needed for this simple version.)
+
+# --- Setup
+# (All setup is already done in the Variables section.)
+
+# --- Main loop
 while True:
-    # Read the INPUT from the PIR sensor
-    if pir_sensor.value:  # If motion is detected (sensor output is HIGH/True)
-        print("Motion detected! Alarm sounding!")  # Send message to serial output/monitor
-        # Turn buzzer ON and OFF rapidly to create a beeping alarm for 5 seconds
-        for _ in range(50):  # Repeat beep pattern 50 times (~5 seconds)
-            buzzer.value = True   # Turn buzzer ON (OUTPUT is HIGH)
-            time.sleep(0.05)      # Wait 50 milliseconds
-            buzzer.value = False  # Turn buzzer OFF (OUTPUT is LOW)
-            time.sleep(0.05)      # Wait another 50 milliseconds
-        print("Alarm reset. Monitoring resumed.")  # Show that the alarm has ended
-        time.sleep(1)  # Wait 1 second before checking the sensor again (avoids retriggering)
+    # Check if motion sensor detects movement (INPUT)
+    if pir_sensor.value:
+        print("Motion detected! Alarm sounding!")
+        # Beep the buzzer quickly for about 5 seconds
+        for i in range(50):
+            buzzer.value = True     # OUTPUT: Turn buzzer ON
+            time.sleep(0.05)        # Wait 0.05 seconds
+            buzzer.value = False    # OUTPUT: Turn buzzer OFF
+            time.sleep(0.05)
+        print("Alarm reset. Monitoring resumed.")
+        time.sleep(1)              # Wait before next check (prevents immediate retrigger)
     else:
-        buzzer.value = False  # Make sure buzzer is always OFF if there's no motion
-        time.sleep(0.1)  # Short delay before next check (loop repeats)
+        buzzer.value = False        # Make sure buzzer stays OFF
+        time.sleep(0.1)             # Short delay before checking again
 
 
 ```
@@ -110,8 +117,12 @@ while True:
 
 ## Ideas for Extensions & Variations
 
+- **Safe:** Build a Cardboard Box that you can put your alarm system into.
 - **Visual Alarms:**  
   Add an LED (or multi-color LED) that flashes when an alarm is triggered or displays system status (e.g., armed/disarmed).
+
+- **Disarm Mechanism:**  
+  Integrate a button or secret sequence to temporarily disable or reset the alarm.
 
 - **Display Status:**  
   Show alarm status and event log on an OLED screen—include time of last trigger.
@@ -122,8 +133,6 @@ while True:
     - Use a light sensor to detect sudden changes in illumination (e.g., a door or box opened).
     - Add a sound sensor to trigger if noise is detected.
 
-- **Disarm Mechanism:**  
-  Integrate a button or secret sequence to temporarily disable or reset the alarm.
 
 - **Smart Patterns:**  
   Vary the alarm sound pattern based on which sensor triggered the alarm (continuous for motion, beeping sequence for tilt, etc).
