@@ -17,26 +17,10 @@ parent: "Part 2: Get Creative! Building & Prototyping"
     </p>
   </div>
   <div style="flex: 1;">
-    <video src="./assets/reactiongame.mov" controls style="max-width: 100%; height: auto;"></video>
-  </div>
-</div>
-
-<div style="display: flex; align-items: center; gap: 20px;">
-  <div style="flex: 1;">
-    <p>
-      This is a simple but exciting two-player reaction game. It lets you practice coding basic logic, working with input and output hardware, and competing with a friend—all with minimal setup.
-    </p>
-    <p>
-      Note: The video shows an advanced 4 Player build of the Reaction Game by 
-      <a href="https://www.youtube.com/shorts/2sUVWSIK9SU">PenguinTutor</a>.
-    </p>
-  </div>
-  <div style="flex: 1;">
-    <img src="./assets/reactiongame.mov" alt="Reaction Game Video" style="max-width: 100%; height: auto;"></img>
+    <img src="./assets/reactiongame.mov" alt="Reaction Game Video" style="max-width: 100%; height: auto;">
   </div>
 </div>
 ---
-
 
 ## What does the Reaction Game do?
 
