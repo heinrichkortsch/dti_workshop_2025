@@ -9,34 +9,32 @@ parent: "Part 2: Get Creative! Building & Prototyping"
 
 This is a simple but exciting two-player reaction game. It lets you practice coding basic logic, working with input and output hardware, and competing with a friend—all with minimal setup.
 
+![Advanced Build of the Reaction Game](./assets/reactiongame.mov)
+
+> The video above shows an advanced 4 Player build of the Reaction Game by [PenguinTutor](https://www.youtube.com/shorts/2sUVWSIK9SU?feature=share).
+
+
 ---
 
 ## What does the Reaction Game do?
 
-Once the LED turns white, both players need to press their button as quickly as possible. The game detects who pressed their button first, then lights up the LED in red or blue to indicate the winner. After a short pause, the game resets and you can play again.
+This project is a beginner-friendly two-player reaction game using tactile buttons and an RGB LED strip (NeoPixel).  
+The game starts automatically when powered up. After a random short delay, the LED lights up white, and both players try to press their button as quickly as possible. The first to press wins the round—the LED flashes red or blue to show the winner. After a short pause, the game restarts.
 
 ---
 
-## How to Play
 
-1. Press the reset/start button to begin (or simply reset the board).
-2. Wait until the LED lights up white—it will happen after a random delay.
-3. As soon as the LED is white, both players compete to press their button as fast as possible.
-4. The first player to press their button wins the round. The LED shows either red or blue to signal the winner.
-5. Wait a few seconds for the LED to turn off, and the game resets for a new round.
-
----
 
 ## Components for the Base Game
 
-- Microcontroller board (e.g. Raspberry Pi Pico)
+- Microcontroller board (Raspberry Pi Pico)
 - 2 × Buttons (digital input)
 - 1 × RGB (NeoPixel) LED (as output)
 - Connection cables
 
 ---
 
-## Other Components You May Use
+## Other Components You May Use Later
 
 You can expand and personalize your game with:
 - More LEDs (for visual feedback, winner indication)
@@ -50,12 +48,14 @@ Check the [Components](../components.md) page for what’s available.
 
 ## Basic Setup
 
-1. **Connect the RGB LED** to a suitable output port/pin.
-2. **Connect both buttons** to input ports/pins.
-3. **Power and connect your board to your computer.**
-4. No resistors or extra manual connections are needed beyond plugging things into the right ports.
+1. **Connect the red button** to GPIO pin GP1.
+2. **Connect the blue button** to GPIO pin GP5.
+3. **Connect the NeoPixel LED strip** (or compatible RGB LED) to GPIO pin GP16.
+4. **Plug in your microcontroller** (e.g. Raspberry Pi Pico) and connect it to your PC.
+5. Optionally: add extra modules (buzzer, display, more LEDs) for your own ideas.
 
-*___Insert wiring diagram or setup photo here___*
+![Reaction Game Setup](./assets/reactiongame_1.jpeg)
+>**Note:** In the picture above one button and one touch sensor were used as Inputs. Both work fine, but for fairness reasons it should be the same sensor for both players.
 
 ---
 
@@ -64,110 +64,121 @@ Check the [Components](../components.md) page for what’s available.
 Below is the complete code for a basic reaction game using two digital inputs (buttons) and an RGB LED for output. Use this as a starting point for your own logic and extensions.
 
 ```python
-##--- Imports
-import digitalio
-import board
-import neopixel
-import time
-import random
+# --- Imports
+import digitalio  # Digital input/output control
+import board      # Board pin definitions
+import neopixel   # Chainable RGB LED control
+import time       # Time-related functions (delay, timers)
+import random     # Generate random numbers for delay
 
-##--- Variables
-state_wait = 0
-state_start_game = 1
-state_wait_button_press = 2
-state_red_wins = 3
-state_blue_wins = 4
-current_state = 0
+# --- Variables
 
-# Button variables
-red_pin = board.GP1
-red_button = digitalio.DigitalInOut(red_pin)
+# Initialize buttons as digital inputs
+red_button = digitalio.DigitalInOut(board.GP1)
 red_button.direction = digitalio.Direction.INPUT
-
-blue_pin = board.GP5
-blue_button = digitalio.DigitalInOut(blue_pin)
+blue_button = digitalio.DigitalInOut(board.GP5)
 blue_button.direction = digitalio.Direction.INPUT
 
-# For the Chainable LED:
-pin_leds = board.GP16
+# Initialize NeoPixel RGB LED strip on GP16 with 6 LEDs
+led_pin = board.GP16
 num_leds = 6
-leds = neopixel.NeoPixel(pin_leds, num_leds, auto_write=False, pixel_order=neopixel.GRB)
+leds = neopixel.NeoPixel(led_pin, num_leds, auto_write=False, pixel_order=neopixel.GRB)
 
-led_off = (0, 0, 0, 0)
-led_red = (255, 0, 0, 0)
-led_blue = (0, 0, 255, 0)
-led_white = (0, 0, 0, 255)
+# Define RGB colors for LED indications
+LED_OFF = (0, 0, 0)          # LEDs off
+LED_WHITE = (255, 255, 255)  # White light to signal "Go!"
+LED_RED = (255, 0, 0)        # Red light for Red player's win
+LED_BLUE = (0, 0, 255)       # Blue light for Blue player's win
 
-# Timer variables
-timer_duration = 0
-timer_mark = 0
+# Initialize timer variables
+countdown_time = 0
+countdown_start = 0
 
-##--- Functions
+# Define game states
+STATE_COUNTDOWN = "countdown"
+STATE_WAIT_FOR_PRESS = "waiting_for_press"
+STATE_WIN = "win"
+current_state = STATE_COUNTDOWN
+
+# --- Functions
+
 def set_led_color(color):
-    global leds
+    """Set all LEDs to the given RGB color."""
     leds.fill(color)
     leds.show()
 
-def set_timer(duration):
-    global timer_duration, timer_mark
-    timer_duration = duration
-    timer_mark = time.monotonic()
+def start_countdown():
+    """Start random countdown between 3 and 7 seconds."""
+    global countdown_time, countdown_start
+    countdown_time = random.randint(3, 7)
+    countdown_start = time.monotonic()
+    print("Get ready...")
 
-def timer_expired():
-    global timer_mark, timer_duration
-    if time.monotonic() - timer_mark > timer_duration:
-        return True
-    else:
-        return False
+def countdown_finished():
+    """Check if countdown timer has finished."""
+    return time.monotonic() - countdown_start >= countdown_time
 
-##--- Main loop
+# --- Setup
+
+# Turn off LEDs initially
+set_led_color(LED_OFF)
+
+# Start the countdown timer
+start_countdown()
+
+current_state = STATE_COUNTDOWN
+
+# --- Main Loop
+
 while True:
-    if current_state == state_wait:
-        set_led_color(led_off)
-        set_timer(random.randint(3, 10))
-        print("starting game!")
-        current_state = state_start_game
+    if current_state == STATE_COUNTDOWN:
+        # Wait until random delay ends
+        if countdown_finished():
+            set_led_color(LED_WHITE)  # Signal "Go!" with white LEDs
+            print("Go! Press your button now!")
+            current_state = STATE_WAIT_FOR_PRESS
 
-    elif current_state == state_start_game:
-        if timer_expired():
-            print("timer expired, press your buttons!")
-            set_led_color(led_white)
-            current_state = state_wait_button_press
-
-    elif current_state == state_wait_button_press:
+    elif current_state == STATE_WAIT_FOR_PRESS:
+        # Wait for either player's button press
         if red_button.value:
-            print("red won")
-            current_state = state_red_wins
+            print("Red wins!")
+            set_led_color(LED_RED)
+            win_time = time.monotonic()
+            current_state = STATE_WIN
         elif blue_button.value:
-            print("blue won")
-            current_state = state_blue_wins
+            print("Blue wins!")
+            set_led_color(LED_BLUE)
+            win_time = time.monotonic()
+            current_state = STATE_WIN
 
-    elif current_state == state_blue_wins:
-        set_led_color(led_blue)
-        time.sleep(3)
-        current_state = state_wait
+    elif current_state == STATE_WIN:
+        # Keep state for 3 seconds, then restart game
+        if time.monotonic() - win_time > 3:
+            set_led_color(LED_OFF)
+            start_countdown()
+            current_state = STATE_COUNTDOWN
 
-    elif current_state == state_red_wins:
-        set_led_color(led_red)
-        time.sleep(3)
-        current_state = state_wait
+    time.sleep(0.01)  # Small delay to reduce CPU usage
+
 ```
 
-{:.note}
-The original source of this reaction game code can be found [here](https://id-studiolab.github.io/Digital-Interfaces/assignments/02-reaction-game/).
+> The original inspiration of this reaction game code can be found [here](https://id-studiolab.github.io/Digital-Interfaces/assignments/02-reaction-game/).
 
 
 ---
 
+
 ## Ideas for Extensions & Variations
 
+
 - Show winner with extra LEDs or on a display
+- Add sound effects (buzzer or speaker) when someone wins
+- Replace buttons with touch sensors, light sensors, or other inputs
+- Make it multiplayer by adding more buttons and LED colors
 - Display winning reaction time or keep a high score
-- Change the rules: e.g. play "Click Race"—see who clicks their button most in 10 seconds
-- Add sound effects with a buzzer**
-- Add more players (with extra buttons, LEDs)
 - Make color challenges or penalties for pressing at the wrong time
-- Create a persistent scoreboard
+- Change the rules to a new game: e.g. play "Click Race"—see who clicks their button most in 10 seconds
+
 
 ---
 
