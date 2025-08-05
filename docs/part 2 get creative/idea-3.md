@@ -7,7 +7,7 @@ parent: "Part 2: Get Creative! Building & Prototyping"
 # Idea 3 – Cardboard Piano (Capacitive Touch)
 <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 20px;">
   <div style="flex: 1;">
-    <img src="./assets/piano_1.jpeg" alt="Cardboard Piano" style="max-width: 100%; height: auto;" />
+    <img src="./assets/piano_1.jpeg" alt="Cardboard Piano" style="max-width: 75%; height: auto;" />
   </div>
   <div style="flex: 1;">
     <p>

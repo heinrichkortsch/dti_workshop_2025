@@ -9,7 +9,7 @@ parent: "Part 2: Get Creative! Building & Prototyping"
 <div style="display: flex; align-items: center; gap: 20px;">
 
   <div style="flex: 1;">
-    <img src="./assets/reactiongame.mov" alt="Reaction Game Video" style="max-width: 100%; height: auto;">
+    <img src="./assets/reactiongame.mov" alt="Reaction Game Video" style="max-width: 75%; height: auto;">
   </div>
     <div style="flex: 1;">
     <p>
