@@ -5,17 +5,25 @@ parent: "Part 2: Get Creative! Building & Prototyping"
 ---
 
 # Idea 3 – Cardboard Piano (Capacitive Touch)
+<div style="display: flex; align-items: center; gap: 20px; margin-bottom: 20px;">
+  <div style="flex: 1;">
+    <p>
+      Build your own simple musical instrument! With just cardboard, metallic foil, and your microcontroller, you’ll create a working touch piano — no traditional buttons needed. This project introduces you to capacitive touch sensing and fun creative electronics.
+    </p>
+    <div style="font-size: small;">
+      This project is based on an <a href="https://www.kevsrobots.com/blog/chicken-nugget-piano.html">idea from Kevin McAleer</a>. As you can see in <a href="https://www.youtube.com/live/MWBl0E1Z8Ps?si=vECPxKjBB3sjbcC2&t=1765">his video</a>, with capacitive touch, you can turn anything into a sensor — even chicken nuggets!
+    </div>
+  </div>
+  <div style="flex: 1;">
+    <img src="./assets/piano_1.jpeg" alt="Cardboard Piano" style="max-width: 100%; height: auto;" />
+  </div>
+</div>
 
-> **Recommended:**  
-Before you try this advanced piano example, please work through the [very basic capacitive touch sensor instruction](../components/12key-touch/12key-touch.html) and test them. It will give you the foundational knowledge you need to set up your Capacitive Touch sensor and understand touch detection, making it much easier to get this sound project working!
 
 ---
 
-Build your own simple musical instrument! With just cardboard, metallic foil, and your microcontroller, you’ll create a working touch piano—no traditional buttons needed. This project introduces you to capacitive touch sensing and creative electronics.
-
-![Cardboard Piano](./assets/piano_1.jpeg)
-
-> This project is based on an [idea from Kevin McAleer](https://www.kevsrobots.com/blog/chicken-nugget-piano.html). As you can see in [his video](https://www.youtube.com/live/MWBl0E1Z8Ps?si=vECPxKjBB3sjbcC2&t=1765), with capacitive touch, you can turn anything into a sensor—even chicken nuggets!
+> **Recommended:**  
+Before you try this advanced piano example, please work through the [very basic capacitive touch sensor instruction](../components/12key-touch/12key-touch.html) and test them. It will give you the foundational knowledge you need to set up your Capacitive Touch sensor and understand touch detection, making it much easier to get this sound project working!
 
 ---
 

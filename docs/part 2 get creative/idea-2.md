@@ -6,6 +6,7 @@ parent: "Part 2: Get Creative! Building & Prototyping"
 
 # Idea 2 - Reaction Game
 
+
 <div style="display: flex; align-items: center; gap: 20px;">
   <div style="flex: 1;">
     <p>
