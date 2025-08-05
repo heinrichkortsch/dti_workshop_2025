@@ -7,6 +7,9 @@ parent: "Part 2: Get Creative! Building & Prototyping"
 # Idea 3 – Cardboard Piano (Capacitive Touch)
 <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 20px;">
   <div style="flex: 1;">
+    <img src="./assets/piano_1.jpeg" alt="Cardboard Piano" style="max-width: 100%; height: auto;" />
+  </div>
+  <div style="flex: 1;">
     <p>
       Build your own simple musical instrument! With just cardboard, metallic foil, and your microcontroller, you’ll create a working touch piano — no traditional buttons needed. This project introduces you to capacitive touch sensing and fun creative electronics.
     </p>
@@ -14,9 +17,7 @@ parent: "Part 2: Get Creative! Building & Prototyping"
       This project is based on an <a href="https://www.kevsrobots.com/blog/chicken-nugget-piano.html">idea from Kevin McAleer</a>. As you can see in <a href="https://www.youtube.com/live/MWBl0E1Z8Ps?si=vECPxKjBB3sjbcC2&t=1765">his video</a>, with capacitive touch, you can turn anything into a sensor — even chicken nuggets!
     </div>
   </div>
-  <div style="flex: 1;">
-    <img src="./assets/piano_1.jpeg" alt="Cardboard Piano" style="max-width: 100%; height: auto;" />
-  </div>
+
 </div>
 
 
