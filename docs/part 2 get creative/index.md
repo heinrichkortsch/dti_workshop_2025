@@ -47,8 +47,8 @@ Here are some for practical, ready-to-use examples you can use as a starting poi
 
 - [Idea 1](./idea-1.md): Alarm System
 - [Idea 2](./idea-2.md): Reaction Game 
-- [Idea 3](./idea-3.md): Energy Production with Water/Wind
-- [Idea 4](./idea-4.md): Cardboard Piano (Capacitive Touch)
+- [Idea 3](./idea-3.md): Cardboard Piano (Capacitive Touch)
+- [Idea 4](./idea-4.md): Energy Production with Water/Wind
 - [More Ideas](./idea-5.md) (short thought-starters)
 
 > **Let’s create and learn together — enjoy building, prototyping, and sharing your ideas!**
