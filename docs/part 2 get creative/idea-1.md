@@ -117,9 +117,12 @@ while True:
 
 ## Ideas for Extensions & Variations
 
-- **Safe:** Build a Cardboard Box that you can put your alarm system into.
+- **Safe:** Build a Cardboard Box that you can put your alarm system into, creating a little secret safe.
+
 - **Visual Alarms:**  
   Add an LED (or multi-color LED) that flashes when an alarm is triggered or displays system status (e.g., armed/disarmed).
+
+- **Vibration:** Trigger a vibration sensor when the alarm goes off.
 
 - **Disarm Mechanism:**  
   Integrate a button or secret sequence to temporarily disable or reset the alarm.
