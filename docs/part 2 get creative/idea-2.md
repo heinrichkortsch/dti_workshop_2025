@@ -6,15 +6,19 @@ parent: "Part 2: Get Creative! Building & Prototyping"
 
 # Idea 2 – Cardboard Piano (Capacitive Touch)
 
-Build your own simple musical instrument! With just cardboard, aluminum foil, and your microcontroller, you’ll create a working touch piano—no traditional buttons needed. This project introduces you to capacitive touch sensing and fun creative electronics.
+Build your own simple musical instrument! With just cardboard, metallic foil, and your microcontroller, you’ll create a working touch piano—no traditional buttons needed. This project introduces you to capacitive touch sensing and fun creative electronics.
 
-![Cardboard Piano](./assets/piano02.jpg)
+![Cardboard Piano](./assets/piano_1.jpeg)
+
+> This project is based on an [idea from Kevin Mcaleer](https://www.kevsrobots.com/blog/chicken-nugget-piano.html). As you can see in [his video](https://www.youtube.com/live/MWBl0E1Z8Ps?si=vECPxKjBB3sjbcC2&t=1765), with capactivice touch, you can turn anything into a sensor, even Chicken Nuggets!
+
+
 
 ---
 
 ## What does the Cardboard Piano do?
 
-The cardboard piano uses “keys” made with aluminum foil taped to a cardboard base. When you touch a key, your finger changes the electrical properties (capacitance) of the foil, allowing the microcontroller to detect your touch. Each key is wired to a different input pin. When touched, your microcontroller plays a sound with the buzzer or even sends MIDI signals for real instrument effects!
+The cardboard piano uses “keys” made with metallic foil taped to a cardboard base. When you touch a key, your finger changes the electrical properties (capacitance) of the foil, allowing the microcontroller to detect your touch. Each key is wired to a different input pin. When touched, your microcontroller plays a sound with the buzzer or even sends MIDI signals for real instrument effects!
 
 
 ---
@@ -33,18 +37,18 @@ For more information, see our [Touch Sensor Overview](../components/12key-touch/
 
 ## How to Play
 
-1. Connect your cardboard piano to the microcontroller (using the provided template, foil, jumpers, and crocodile clips).
+1. Connect your cardboard piano to the microcontroller (using the provided template, foil, cables, and crocodile clips).
 2. Load and run the CircuitPython code below.
-3. Touch a key—hear a sound or see a note highlight!
+3. Touch a key—hear a sound or see a note!
 4. Play simple tunes and try making your own.
 
 ---
 
 ## Components for the Base Piano
 
-- Microcontroller (e.g. Raspberry Pi Pico)
+- Microcontroller (Raspberry Pi Pico)
 - [Cardboard piano template](./assets/touch_piano.pdf) (provided at workshop)
-- Aluminum foil (for the keys)
+- metallic foil (e.g. aluminium or copper)
 - Jumper wires / crocodile clips
 - 1 M Ohm resistors (for each touch input)
 - Buzzer, speaker, or use USB MIDI output (depending on extension/project scope)
@@ -52,7 +56,7 @@ For more information, see our [Touch Sensor Overview](../components/12key-touch/
 
 ---
 
-## Other Components You May Use
+## Other Components You May Use Later
 
 - LEDs (visual feedback per key)
 - OLED display (show note names or simple visualizer)
@@ -64,7 +68,7 @@ Check the [Components](../components.md) page for what’s available.
 
 ## Basic Setup
 
-1. **Cover each cardboard key with foil,** so that one end can be connected to a jumper wire or crocodile clip.
+1. **Cover each cardboard key with foil,** so that one end can be connected to a jumper wire or crocodile clip. It works best if there is some distance inbetween the foil for the different keys, to make sure that thex do not touch. The adhesive copper-foil band (shown in the picture above on the right side of the piano) works best.
 2. **Connect one side of each 1M Ohm resistor** to your microcontroller input pin, and the other to the foil. Connect the other side of the foil (or a separate area) to ground.
 3. **Plug in the buzzer/speaker** (or configure for MIDI over USB).
 4. **Connect the Pico and get ready to play.**

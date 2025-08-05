@@ -29,10 +29,10 @@ You can customize your alarm system with different sensors, lights, displays, or
 
 ## Components for the Base System
 
-- Microcontroller board (Raspberry Pi Pico)
-- Motion sensor (PIR sensor)
-- Buzzer or speaker
-- Connection cables
+- Microcontroller Board (Raspberry Pi Pico)
+- Motion Sensor (PIR sensor)
+- Buzzer (Piezo)
+- Grove Cables
 
 ---
 
@@ -54,13 +54,13 @@ Check the [Components](../components.md) page for available parts.
 
 ## Basic Setup
 
-1. **Connect the motion sensor** to a digital input pin.
-2. **Connect the buzzer** to a digital output pin.
+1. **Connect the motion sensor** to a digital input pin (A0).
+2. **Connect the buzzer** to a digital output pin (A2).
 3. **Power and connect your board to your computer.**
 4. Other modules: Plug in LEDs, displays, or additional sensors as needed.
 
 
-[Alarm System Wiring](./assets/alarm_system_1.jpeg)
+![Alarm System Wiring](./assets/alarm_system_1.jpeg)
 
 ---
 
