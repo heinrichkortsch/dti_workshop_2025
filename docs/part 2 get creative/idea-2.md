@@ -1,66 +1,48 @@
 ---
 layout: default
-title: "Idea 2 - Cardboard Piano (Capacitive Touch)"
+title: "Idea 2 - Reaction Game"
 parent: "Part 2: Get Creative! Building & Prototyping"
 ---
 
-# Idea 2 – Cardboard Piano (Capacitive Touch)
 
-Build your own simple musical instrument! With just cardboard, metallic foil, and your microcontroller, you’ll create a working touch piano—no traditional buttons needed. This project introduces you to capacitive touch sensing and fun creative electronics.
+# Idea 2 - Reaction Game
 
-![Cardboard Piano](./assets/piano_1.jpeg)
-
-> This project is based on an [idea from Kevin Mcaleer](https://www.kevsrobots.com/blog/chicken-nugget-piano.html). As you can see in [his video](https://www.youtube.com/live/MWBl0E1Z8Ps?si=vECPxKjBB3sjbcC2&t=1765), with capactivice touch, you can turn anything into a sensor, even Chicken Nuggets!
-
-
+This is a simple but exciting two-player reaction game. It lets you practice coding basic logic, working with input and output hardware, and competing with a friend—all with minimal setup.
 
 ---
 
-## What does the Cardboard Piano do?
+## What does the Reaction Game do?
 
-The cardboard piano uses “keys” made with metallic foil taped to a cardboard base. When you touch a key, your finger changes the electrical properties (capacitance) of the foil, allowing the microcontroller to detect your touch. Each key is wired to a different input pin. When touched, your microcontroller plays a sound with the buzzer or even sends MIDI signals for real instrument effects!
-
-
----
-
-## How Capacitive Touch Works
-
-Capacitive touch sensors use the same principle as smartphone screens or touch lamps. When you connect a metallic surface (like foil), your own body adds “capacitance” to the circuit when you touch it. The Pico (or other microcontroller) can measure this—often using a resistor for each key.
-
-- When untouched: the pin discharges “slowly.”
-- When touched: the pin discharges “quickly,” due to your body’s effect.
-- The software watches how fast the voltage changes to detect, “was it touched?”
-
-For more information, see our [Touch Sensor Overview](../components/12key-touch/12key-touch.html).
+Once the LED turns white, both players need to press their button as quickly as possible. The game detects who pressed their button first, then lights up the LED in red or blue to indicate the winner. After a short pause, the game resets and you can play again.
 
 ---
 
 ## How to Play
 
-1. Connect your cardboard piano to the microcontroller (using the provided template, foil, cables, and crocodile clips).
-2. Load and run the CircuitPython code below.
-3. Touch a key—hear a sound or see a note!
-4. Play simple tunes and try making your own.
+1. Press the reset/start button to begin (or simply reset the board).
+2. Wait until the LED lights up white—it will happen after a random delay.
+3. As soon as the LED is white, both players compete to press their button as fast as possible.
+4. The first player to press their button wins the round. The LED shows either red or blue to signal the winner.
+5. Wait a few seconds for the LED to turn off, and the game resets for a new round.
 
 ---
 
-## Components for the Base Piano
+## Components for the Base Game
 
-- Microcontroller (Raspberry Pi Pico)
-- [Cardboard piano template](./assets/touch_piano.pdf) (provided at workshop)
-- metallic foil (e.g. aluminium or copper)
-- Jumper wires / crocodile clips
-- 1 M Ohm resistors (for each touch input)
-- Buzzer, speaker, or use USB MIDI output (depending on extension/project scope)
-- Basic connection cables
+- Microcontroller board (e.g. Raspberry Pi Pico)
+- 2 × Buttons (digital input)
+- 1 × RGB (NeoPixel) LED (as output)
+- Connection cables
 
 ---
 
-## Other Components You May Use Later
+## Other Components You May Use
 
-- LEDs (visual feedback per key)
-- OLED display (show note names or simple visualizer)
-- Extra sensors—mix with the gesture, light, or IMU sensors for creative effects
+You can expand and personalize your game with:
+- More LEDs (for visual feedback, winner indication)
+- Additional buttons (to support more players)
+- Display (OLED) (to show winner, reaction times, highscore, etc.)
+- Buzzer or speaker (for sound effects)
 
 Check the [Components](../components.md) page for what’s available.
 
@@ -68,69 +50,129 @@ Check the [Components](../components.md) page for what’s available.
 
 ## Basic Setup
 
-1. **Cover each cardboard key with foil,** so that one end can be connected to a jumper wire or crocodile clip. It works best if there is some distance inbetween the foil for the different keys, to make sure that thex do not touch. The adhesive copper-foil band (shown in the picture above on the right side of the piano) works best.
-2. **Connect one side of each 1M Ohm resistor** to your microcontroller input pin, and the other to the foil. Connect the other side of the foil (or a separate area) to ground.
-3. **Plug in the buzzer/speaker** (or configure for MIDI over USB).
-4. **Connect the Pico and get ready to play.**
+1. **Connect the RGB LED** to a suitable output port/pin.
+2. **Connect both buttons** to input ports/pins.
+3. **Power and connect your board to your computer.**
+4. No resistors or extra manual connections are needed beyond plugging things into the right ports.
 
-*___Insert wiring/photo of setup here___*
+*___Insert wiring diagram or setup photo here___*
 
 ---
 
 ## Code
 
-Here is an example for two piano keys. Expand to more by adding pins!
+Below is the complete code for a basic reaction game using two digital inputs (buttons) and an RGB LED for output. Use this as a starting point for your own logic and extensions.
 
 ```python
-
-# Capacitive Touch Cardboard Piano – Basic Version
-
-import board
+##--- Imports
 import digitalio
+import board
+import neopixel
 import time
+import random
 
-# Setup pins for capacitive touch sensing (Input)
-key1_pin = board.GP2    # Connect to "C" key foil with 1M resistor to GND
-key2_pin = board.GP3    # Connect to "D" key foil with 1M resistor to GND
+##--- Variables
+state_wait = 0
+state_start_game = 1
+state_wait_button_press = 2
+state_red_wins = 3
+state_blue_wins = 4
+current_state = 0
 
-key1 = digitalio.DigitalInOut(key1_pin)
-key1.direction = digitalio.Direction.INPUT
-key2 = digitalio.DigitalInOut(key2_pin)
-key2.direction = digitalio.Direction.INPUT
+# Button variables
+red_pin = board.GP1
+red_button = digitalio.DigitalInOut(red_pin)
+red_button.direction = digitalio.Direction.INPUT
 
-# Output: buzzer or print (replace with sound playing as desired)
-def play_note(note):
-    print(f"Note {note} played")
-    # For actual sound: activate buzzer for key1/key2, or use MIDI extension
+blue_pin = board.GP5
+blue_button = digitalio.DigitalInOut(blue_pin)
+blue_button.direction = digitalio.Direction.INPUT
 
+# For the Chainable LED:
+pin_leds = board.GP16
+num_leds = 6
+leds = neopixel.NeoPixel(pin_leds, num_leds, auto_write=False, pixel_order=neopixel.GRB)
+
+led_off = (0, 0, 0, 0)
+led_red = (255, 0, 0, 0)
+led_blue = (0, 0, 255, 0)
+led_white = (0, 0, 0, 255)
+
+# Timer variables
+timer_duration = 0
+timer_mark = 0
+
+##--- Functions
+def set_led_color(color):
+    global leds
+    leds.fill(color)
+    leds.show()
+
+def set_timer(duration):
+    global timer_duration, timer_mark
+    timer_duration = duration
+    timer_mark = time.monotonic()
+
+def timer_expired():
+    global timer_mark, timer_duration
+    if time.monotonic() - timer_mark > timer_duration:
+        return True
+    else:
+        return False
+
+##--- Main loop
 while True:
-    # Touch detection (replace with your threshold/logic, see advanced versions)
-    if not key1.value:  # Touched (depends on wiring)
-        play_note("C")
-        time.sleep(0.2)
-    if not key2.value:
-        play_note("D")
-        time.sleep(0.2)
-    time.sleep(0.05)
+    if current_state == state_wait:
+        set_led_color(led_off)
+        set_timer(random.randint(3, 10))
+        print("starting game!")
+        current_state = state_start_game
 
+    elif current_state == state_start_game:
+        if timer_expired():
+            print("timer expired, press your buttons!")
+            set_led_color(led_white)
+            current_state = state_wait_button_press
+
+    elif current_state == state_wait_button_press:
+        if red_button.value:
+            print("red won")
+            current_state = state_red_wins
+        elif blue_button.value:
+            print("blue won")
+            current_state = state_blue_wins
+
+    elif current_state == state_blue_wins:
+        set_led_color(led_blue)
+        time.sleep(3)
+        current_state = state_wait
+
+    elif current_state == state_red_wins:
+        set_led_color(led_red)
+        time.sleep(3)
+        current_state = state_wait
 ```
+
+{:.note}
+The original source of this reaction game code can be found [here](https://id-studiolab.github.io/Digital-Interfaces/assignments/02-reaction-game/).
+
 
 ---
 
 ## Ideas for Extensions & Variations
 
-- **Add more keys:** Build a whole scale (C, D, E, F, G, A, B) or even sharps/flats!
-- **LED feedback:** Light up an LED for each key when it’s played.
-- **Octaves or sound choice:** Change octaves or instrument sounds with a button.
-- **MIDI output:** Send real MIDI notes to your computer for pro sound (see advanced examples).
-- **OLED display:** Show the played note or animate a “piano roll.”
-- **Wild materials:** Try fruit, water, or other conductive objects as keys!
-- **Improvise:** Use body contacts, wearables, or combine with gesture sensors for cool interactions.
-- **Duet mode:** Allow two people to play at once, triggering chords or harmonies.
+- Show winner with extra LEDs or on a display
+- Display winning reaction time or keep a high score
+- Change the rules: e.g. play "Click Race"—see who clicks their button most in 10 seconds
+- Add sound effects with a buzzer**
+- Add more players (with extra buttons, LEDs)
+- Make color challenges or penalties for pressing at the wrong time
+- Create a persistent scoreboard
 
 ---
 
-**Start by building the cardboard piano with a couple keys. Once it works, add sounds, graphics, or unleash your creativity with more keys and new features!**
+**Start by getting the basic game running, then pick and implement one or more of the extensions above, or invent your own twist!**
+
 
 
 ---
