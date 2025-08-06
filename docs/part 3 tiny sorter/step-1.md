@@ -59,15 +59,19 @@ Start by watching the videos below, which walks you through every step of the as
 ## 4. Connect it
 ![Video: Connect it](assets/video4.mp4)
 
+> **Note:** Plug the servo motor into GP5.
+
 ## 5. Upload the Code
 You need two files on your Pi PicO:
 1. The first one that needs to be created is `boot.py`:
+
 ```python
 import usb_cdc
     usb_cdc.enable(console=True, data=True)
 ```
 
 2. The main file is `code.py`:
+
 ```python
 import time
 import board
@@ -80,7 +84,6 @@ SERVO_PIN = board.GP5  # <--- Change to your correct pin
 IDLE_START = 60        # Idle movement: start angle (degrees)
 IDLE_END = 90          # Idle movement: end angle (degrees)
 IDLE_SPEED = 0.025     # Delay time for idle movement (seconds) - lower is faseter
-
 
 
 # === SETUP (leave unchanged unless you know what you're doing) ===
@@ -98,7 +101,6 @@ def reset_serial_buffer(serial):
     """Clear all pending bytes from the serial buffer."""
     while serial.in_waiting > 0:
         serial.read(1)
-
 
 
 
@@ -156,8 +158,6 @@ while True:
 # === END OF FILE ===
 
 ```
-
-> **Note:** Plug the servo motor into GP5.
 
 ---
 
