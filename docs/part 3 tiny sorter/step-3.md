@@ -55,7 +55,7 @@ parent: "Part 3: Machine Learning meets Microcontrollers"
 > **Tip:**  
 > If something doesn’t work, check all connections, use Chrome(!), close Mu-Editor, and make sure both `code.py` and `boot.py` exist on the Pico.
 
-Happy sorting! 🚀
+The Setup is all done? Let's test your Tiny Sorter.
 
 
 
