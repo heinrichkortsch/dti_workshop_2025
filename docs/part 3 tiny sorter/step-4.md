@@ -54,4 +54,4 @@ You have successfully built and tested your Tiny Sorter. 🚀
 
 ---
 
-[Continue with Step 5 (optional) to modify, adapt or extend your Tiny Sorter!](step-1){: .btn .btn-blue }
+[Continue with Step 5 (optional) to modify, adapt or extend your Tiny Sorter!](step-5){: .btn .btn-blue }
