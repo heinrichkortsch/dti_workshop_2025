@@ -6,11 +6,9 @@ parent: "Part 3: Machine Learning meets Microcontrollers"
 
 # Step 3 - Setup
 
-## Step 3 – Setup Instructions for the Tiny Sorter
-
 >Follow these steps to set up your Tiny Sorter. The process is also shown in the video below.
 
-![Video: Setup Video](assets/setup.MOV)
+![Video: Setup Video](assets/setup.mp4)
 
 - **Mount the Tiny Sorter in front of the webcam**  
  Place your Tiny Sorter so that the objects and the sorter arm are clearly visible to the camera.

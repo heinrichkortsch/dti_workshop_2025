@@ -10,7 +10,7 @@ It is time to test your Tiny Sorter! After completing the setup in Step 3, you s
 
 The video below shows the Tiny Sorter in action:
 
-![Video: Testing Video](assets/testing.MOV)
+![Video: Testing Video](assets/testing.mp4)
 
 Using the [Web Serial API](https://developer.chrome.com/docs/capabilities/serial/), the machine learning model running in your web app sends class predictions to the Pico, which moves the servo to sort objects accordingly.
 
