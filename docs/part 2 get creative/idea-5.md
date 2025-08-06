@@ -9,7 +9,8 @@ parent: "Part 2: Get Creative! Building & Prototyping"
 
 In addition to the other project ideas that have been developed in detail, here are several further simple project ideas. These are provided as inspiration and brainstorming starters.
 
-- **Musical Doorbell**: Program a doorbell that plays different tones depending on button presses or other sensor inputs.- **Capacitive Touch Lamp**: Build a lamp that can be turned on/off or change color simply by touching it, using capacitive sensing.
+- **Musical Doorbell**: Program a doorbell that plays different tones depending on button presses or other sensor inputs.
+- **Capacitive Touch Lamp**: Build a lamp that can be turned on/off or change color simply by touching it, using capacitive sensing.
 - **Interactive Touch Button**: Use everyday conductive objects (such as fruit or metal) as touch buttons to trigger lights or sounds.
 - **Ambient Light Meter**: Measure surrounding light levels with a brightness sensor and display the result on LEDs or NeoPixel strips.
 - **Sound Visualizer**: Connect a microphone sensor to light up LEDs based on noise or sound amplitude in the room.
