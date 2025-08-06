@@ -52,8 +52,8 @@ Below you'll find the main steps for training your Tiny Sorter ML model with Tea
 ### 3. Record Training Data
 
 - For each class, use your webcam to **capture at least 50 images**.
-  - Vary the angle, lighting, and distance as much as possible for best results!
-- Move the object around to help the computer “see” it in different positions and conditions. This works best if you upload and start the [provided code](./assets/part3_tinysorter.py) to the Pico beacuse there is an idle movement from left to right. 
+- Vary the angle, lighting, and distance as much as possible for best results!
+- Move the object around to help the computer “see” it in different positions and conditions. This works best if you upload and start the provided code to the Pico beacuse there is an idle movement from left to right. 
 
 ![Video: TM Video 3](assets/TM_video3.mp4)
 
