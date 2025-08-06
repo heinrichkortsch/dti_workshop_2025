@@ -56,6 +56,10 @@ Start by watching the videos below, which walks you through every step of the as
 
 > **Note:** The video shows how to build the sorter using an Arduino (a different microcontroller similar to our Raspberry Pi Pico ). Focus now on building the physical parts — connection differences are explained in a later step.
 
+## 4. Connect it
+![Video: Connect it](assets/video4.mp4)
+
+> **Note:** Plug the servo motor into GP5.
 
 ---
 

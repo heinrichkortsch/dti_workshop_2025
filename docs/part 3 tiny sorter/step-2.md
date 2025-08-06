@@ -46,15 +46,22 @@ Below you'll find the main steps for training your Tiny Sorter ML model with Tea
 - For our Tiny Sorter you have to created a third Class, e.g. "No Item", which we will use to train the model to recognize situations when there is no item to be sorted.
 
 ![Video: TM Video 2](assets/TM_video2.mov)
+
 ---
 
 ### 3. Record Training Data
 
 - For each class, use your webcam to **capture at least 50 images**.
   - Vary the angle, lighting, and distance as much as possible for best results!
-- Move the object around to help the computer “see” it in different positions and conditions.
+- Move the object around to help the computer “see” it in different positions and conditions. This works best if you upload and start the [provided code](./assets/part3_tinysorter.py) to the Pico beacuse there is an idle movement from left to right. 
 
-*Video or screenshot here*
+![Video: TM Video 3](assets/TM_video3.mp4)
+
+> As you can see in the video from the original Google project, they used Marshmallows and Cereals as their two Classes. 
+
+![Video: TM Video 4](assets/TM_video4.mp4)
+
+> Remember to also train a third class with nothing in it (this class will ensure that your sorter runs).
 
 ---
 
@@ -62,9 +69,9 @@ Below you'll find the main steps for training your Tiny Sorter ML model with Tea
 
 - Click the **“Train Model”** button.
 - Your browser will process the images and build a lightweight neural network behind the scenes.
-- When done, you’ll see a live preview—hold up an object and watch the model try to classify it.
+- When done, you’ll see a live preview — insert up an object and watch the model try to classify it.
 
-*Video or screenshot here*
+![Video: TM Video 5](assets/TM_video5.mov)
 
 ---
 
@@ -74,7 +81,7 @@ Below you'll find the main steps for training your Tiny Sorter ML model with Tea
 - Choose **“Upload my model”** (makes it available online).
 - Copy the provided **model link** to use with our sorting interface (you’ll need it later in Step 3).
 
-*Video or screenshot here*
+![Video: TM Video 6](assets/TM_video6.mp4)
 
 ---
 
