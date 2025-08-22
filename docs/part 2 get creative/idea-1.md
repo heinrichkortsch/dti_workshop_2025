@@ -86,12 +86,12 @@ import time
 # --- Variables
 
 # Set up the PIR motion sensor as INPUT (detects movement)
-pir_pin = board.GP2
+pir_pin = board.GP1
 pir_sensor = digitalio.DigitalInOut(pir_pin)
 pir_sensor.direction = digitalio.Direction.INPUT
 
 # Set up the buzzer as OUTPUT (makes sound)
-buzzer_pin = board.GP15
+buzzer_pin = board.GP18
 buzzer = digitalio.DigitalInOut(buzzer_pin)
 buzzer.direction = digitalio.Direction.OUTPUT
 

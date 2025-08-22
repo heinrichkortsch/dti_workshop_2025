@@ -90,7 +90,7 @@ blue_button = digitalio.DigitalInOut(board.GP5)
 blue_button.direction = digitalio.Direction.INPUT
 
 # Initialize NeoPixel RGB LED strip on GP16 with 6 LEDs
-led_pin = board.GP16
+led_pin = board.GP9
 num_leds = 6
 leds = neopixel.NeoPixel(led_pin, num_leds, auto_write=False, pixel_order=neopixel.GRB)
 
