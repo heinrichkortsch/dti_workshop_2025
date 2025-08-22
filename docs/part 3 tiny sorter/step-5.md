@@ -39,7 +39,11 @@ Build, extend, remix—make it truly yours, and have fun exploring creative hard
 
 **Take a look at the video below for some inspiration from a previous build with Arduino-Microcontroller:**
 
-![Video: Arduino Advanced Sorter Example](assets/Arduino.mp4)
+<div>
+  <video autoplay muted loop playsinline title="Arduino Advanced Sorter Example" style="max-width: 100%; height: auto;">
+    <source src="./assets/Arduino.mp4" type="video/mp4">
+  </video>
+</div>
 
 > In this build, I integrated buttons to start and stop the sorting process, as well as a dedicated button to reset the counters. Additionally, a display was added to show the live count for each class directly on the screen.
 
@@ -57,5 +61,4 @@ Programming microcontrollers with new features can be challenging, especially un
 Or, as always, just ask our workshop instructors for real-world help on the spot.
 
 ---
-
 
