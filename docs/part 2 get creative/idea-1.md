@@ -13,8 +13,9 @@ parent: "Part 2: Get Creative! Building & Prototyping"
     This project guides you through building a simple alarm system. You'll learn to use sensors to detect motion or other changes in the environment and trigger an audio alert — an intro to automated, interactive devices!
     </p>
   </div>
-  <img src="./assets/alarm_system_0.gif" alt="Alarm System Gif" style="width: 200px; height: auto;" />
+  <img src="./assets/alarm_system_0.gif" alt="Alarm System Gif" style="max-width: 160px; height: auto;" />
 </div>
+
 
 ---
 
