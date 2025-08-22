@@ -103,7 +103,6 @@ def reset_serial_buffer(serial):
         serial.read(1)
 
 
-
 # === MAIN LOOP ===
 while True:
     if serial.in_waiting > 0:
