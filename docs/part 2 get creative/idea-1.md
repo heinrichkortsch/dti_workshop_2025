@@ -68,7 +68,7 @@ Check the [Components](../components.md) page for available parts.
 4. Other modules: Plug in LEDs, displays, or additional sensors as needed.
 
 
-![Alarm System Wiring](./assets/alarm_system_1.jpeg)
+![Alarm System Wiring](./assets/alarm_system_1.png)
 
 ---
 
