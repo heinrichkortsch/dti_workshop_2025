@@ -56,12 +56,12 @@ Check the [Components](../components.md) page for what’s available.
 ## Basic Setup
 
 1. **Connect the red button** to GPIO pin GP1.
-2. **Connect the blue button** to GPIO pin GP5.
-3. **Connect the NeoPixel LED strip** (or compatible RGB LED) to GPIO pin GP16.
+2. **Connect the blue button** to GPIO pin GP16.
+3. **Connect the NeoPixel LED strip** (or compatible RGB LED) to GPIO pin GP9.
 4. **Plug in your microcontroller** (e.g. Raspberry Pi Pico) and connect it to your PC.
 5. Optionally: add extra modules (buzzer, display, more LEDs) for your own ideas.
 
-![Reaction Game Setup](./assets/reactiongame_1.jpeg)
+![Reaction Game Setup](./assets/Reaction%20Game.png)
 >**Note:** In the picture above one button and one touch sensor were used as Inputs. Both work fine, but for fairness reasons it should be the same sensor for both players.
 
 ---
@@ -83,11 +83,11 @@ import random     # Generate random numbers for delay
 # Initialize buttons as digital inputs
 red_button = digitalio.DigitalInOut(board.GP1)
 red_button.direction = digitalio.Direction.INPUT
-blue_button = digitalio.DigitalInOut(board.GP5)
+blue_button = digitalio.DigitalInOut(board.GP16)
 blue_button.direction = digitalio.Direction.INPUT
 
-# Initialize NeoPixel RGB LED strip on GP16 with 6 LEDs
-led_pin = board.GP16
+# Initialize NeoPixel RGB LED strip on GP9 with 6 LEDs
+led_pin = board.GP9
 num_leds = 6
 leds = neopixel.NeoPixel(led_pin, num_leds, auto_write=False, pixel_order=neopixel.GRB)
 
@@ -202,7 +202,7 @@ There are several ways for you to get some help with your prototypes:
 
 1. We have trained a custom ChatGPT-Agent for you that will help you with any questions. This is especially helpful regarding your python-code:
 
-    [DTI Workshop Helper](https://chatgpt.com/g/g-6890968826808191b1bccc15d0e6a983-dti-workshop-helper){: .btn}
+    [DTI Workshop Helper](https://www.perplexity.ai/search/dti-workshop-helper-T0eH2gNyRM2elfBJcprRJw){: .btn}
 
 2. For references on using specific components, jump to the Components section: 
 
