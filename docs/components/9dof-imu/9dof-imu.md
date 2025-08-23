@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "9DoF Motion Sensor"
+title: "9DoF IMU"
 parent: "Components"
 nav_order: 17
 has_children: false
@@ -8,11 +8,11 @@ has_children: false
 
 <img src="assets/9dof-imu-w-cable.png" alt="9DoF IMU" width="250"/>
 
-# **9DoF Motion Sensor**
+# **9DoF IMU** (Motion & Orientation Sensor)
 
 <a href="../../glossary/glossary"><img src="../../glossary/assets/input.png" alt="Input" width="72"/></a> <a href="../../glossary/glossary"><img src="../../glossary/assets/IIC.png" alt="I2C" width="72"/></a>
 
-A motion sensor that combines **accelerometer, gyroscope, and magnetometer** in one package. It is suitable for **motion sensing**, **orientation detection**, and many more applications.
+A sensor that combines **accelerometer, gyroscope, and magnetometer** in one package. It is suitable for **motion sensing**, **orientation detection**, and many more applications.
 
 ---
 
