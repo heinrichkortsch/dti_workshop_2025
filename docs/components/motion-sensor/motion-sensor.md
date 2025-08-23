@@ -2,7 +2,7 @@
 layout: default
 title: "Motion Sensor"
 parent: "Components"
-nav_order: 6
+nav_order: 14
 has_children: false
 ---
 

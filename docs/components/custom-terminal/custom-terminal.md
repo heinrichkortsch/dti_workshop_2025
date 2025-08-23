@@ -2,7 +2,7 @@
 layout: default
 title: "Custom Screw Terminal"
 parent: "Components"
-nav_order: 8
+nav_order: 18
 has_children: false
 ---
 

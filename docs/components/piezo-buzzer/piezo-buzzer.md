@@ -2,7 +2,7 @@
 layout: default
 title: "Piezo Buzzer"
 parent: "Components"
-nav_order: 10
+nav_order: 8
 has_children: false
 ---
 

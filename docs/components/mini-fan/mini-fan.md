@@ -1,14 +1,14 @@
 ---
 layout: default
-title: "DC Motor Fan"
+title: "DC Motor & Fan"
 parent: "Components"
-nav_order: 6
+nav_order: 13
 has_children: false
 ---
 
-<img src="assets/dc-motor-fan.png" alt="Grove Mini Fan" width="500"/>
+<img src="assets/dc-motor.png" alt="Grove Mini Fan" width="500"/>
 
-# DC Motor Fan
+# DC Motor & Fan
 <a href="../../glossary/glossary"><img src="../../glossary/assets/output.png" alt="Output" width="72"/></a> <a href="../../glossary/glossary"><img src="../../glossary/assets/PWM.png" alt="PWM" width="72"/></a>
 
 A small DC motor with a soft plastic fan attachment. Safe to touch, even when spinning.

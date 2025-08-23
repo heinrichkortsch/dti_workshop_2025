@@ -2,7 +2,7 @@
 layout: default
 title: "RGB LED Strip"
 parent: "Components"
-nav_order: 4
+nav_order: 7
 has_children: false
 ---
 
@@ -33,7 +33,7 @@ For more details, see the product pages of the [Adafruit Neopixel RGB LED Strip]
 
 To easily control these NeoPixel RGB LED's in your code, the `neopixel` [library](../../glossary/glossary) is needed. The library should be pre-loaded on your Raspberry Pi Pico.
 
-1{: .highlight }
+{: .highlight }
 You can verify that the library is installed by ensuring a file called `neopixel.mpy` is present in the `lib` folder of your `CIRCUITPY` drive. If not, download Adafruit's Library Bundle for Version 9.x [here](https://circuitpython.org/libraries). Extract the needed file from the bundle and place it in the `lib` folder on your microcontroller. You can learn more about libraries and their use in the [Glossary](../../glossary/glossary) or the [Tutorials](../../tutorials).
 
 The examples below assume your component is connected to the connector **GP20** on the Grove Shield.
