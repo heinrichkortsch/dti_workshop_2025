@@ -76,9 +76,9 @@ while True:
 ```
 
 {: .note }
-If you want to **see the values change visually**, replace the print block with  
+If you want to see the values change visually, replace the print block with  
     ```print((ax, ay, az, gx, gy, gz, mx, my, mz))```  
-Then open Mu’s **Plotter** instead of the Serial Monitor. Each axis will appear as a separate channel trace.
+Then open Mu’s **Plotter** instead of the Serial Monitor. Each axis will appear as a separate trace.
 
 
 ## Additional Resources
