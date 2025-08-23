@@ -18,7 +18,13 @@ Can detect knocks and impacts.
 This component is based on [Adafruit's Large Enclosed Piezo Element](https://www.adafruit.com/product/1739).
 
 {:.important}
-Make sure your component has a resistor in parallel with the Piezo Element (bridging the black wire to the red/yellow one, as shown above.) If there is a resistor embedded in the black wire, then the component is configured as a [Piezo Buzzer](../piezo-buzzer/piezo-buzzer) and cannot be used as a sensor!
+Make sure your Piezo Element is wired to the **SENSE** terminals on the Piezo Config Board, as pictured above. If the wires are connected to the **BUZZ** terminals, the component is configured as a [Piezo Buzzer](../piezo-buzzer/piezo-buzzer) and cannot be used as a sensor!
+
+{:.highlight-yellow}
+<img src="assets/knock-sensor-old.png" alt="Old Knock Sensor"  style="float: right; margin: 10px 0px;" width="220"/>An **older version** of the Knock Sensor **without** the configuration board is also available. It consists of a piezo element with a resistor across its leads, as pictured here. If handled carelessly it can cause damage to the microcontroller. Whenever possible, favor the **newer version**, especially for long-term projects.
+
+
+
 
 ---
 
