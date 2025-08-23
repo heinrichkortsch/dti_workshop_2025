@@ -27,7 +27,7 @@ All these ideas use only the standard kit components and serve as accessible sta
 
 There are several ways for you to get some help with your prototypes:
 
-1. We have trained a custom ChatGPT-Agent for you that will help you with any questions. This is especially helpful regarding your python-code:
+1. We have trained a custom AI-Agent for you that will help you with any questions. This is especially helpful regarding your python-code:
 
     [DTI Workshop Helper](https://www.perplexity.ai/search/dti-workshop-helper-T0eH2gNyRM2elfBJcprRJw){: .btn}
 
