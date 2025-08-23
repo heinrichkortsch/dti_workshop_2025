@@ -6,14 +6,26 @@ nav_order: 4
 has_children: false
 ---
 
-<img src="assets/Neopixel-Strip.png" alt="Neopixel Strip" width="500"/>
+<img src="assets/led-components.png" alt="LED Components" width="500"/>
 
-# Neopixel RGB LED Strip
+# RGB LED Strip
 <a href="../../glossary/glossary"><img src="../../glossary/assets/output.png" alt="Output" width="72"/></a> <a href="../../glossary/glossary"><img src="../../glossary/assets/digital.png" alt="Digital" width="72"/></a>
 
 A light source that can produce RGB colored light. 
 
-This is a section of an [Adafruit Neopixel RGB LED strip](https://www.adafruit.com/product/2541) with a Grove connector. Extensive information on NeoPixel components and their use is available [here](https://learn.adafruit.com/adafruit-neopixel-uberguide/the-magic-of-neopixels).
+There are two versions of this component at your disposal. They behave the same in code, but differ in form factor and LED count. Pick whichever version fits your project best.
+
+Extensive information on NeoPixel components and their use is available [here](https://learn.adafruit.com/adafruit-neopixel-uberguide/the-magic-of-neopixels).
+
+{:.important}
+Thes following code examples assume you are using the Neopixel RGB LED Strip. Remember to adjust your `num_leds` to `10` if you are working with the Grove LED Stick.
+
+|                    Neopixel RGB LED Strip                    |                     Grove RGB LED Stick                      |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+|                    with 6 RGB LED Diodes                     |                    with 10 RGB LED Diodes                    |
+| <img src="assets/neopixel-strip.png" alt="Neopixel Strip" width="400"/> | <img src="assets/led-stick.png" alt="Grove LED Stick" width="400"/> |
+
+For more details, see the product pages of the [Adafruit Neopixel RGB LED Strip](https://www.adafruit.com/product/2541) and the [Grove RGB LED Stick](https://wiki.seeedstudio.com/Grove-RGB_LED_Stick-10-WS2813_Mini/).
 
 ---
 
@@ -21,7 +33,7 @@ This is a section of an [Adafruit Neopixel RGB LED strip](https://www.adafruit.c
 
 To easily control these NeoPixel RGB LED's in your code, the `neopixel` [library](../../glossary/glossary) is needed. The library should be pre-loaded on your Raspberry Pi Pico.
 
-{: .highlight }
+1{: .highlight }
 You can verify that the library is installed by ensuring a file called `neopixel.mpy` is present in the `lib` folder of your `CIRCUITPY` drive. If not, download Adafruit's Library Bundle for Version 9.x [here](https://circuitpython.org/libraries). Extract the needed file from the bundle and place it in the `lib` folder on your microcontroller. You can learn more about libraries and their use in the [Glossary](../../glossary/glossary) or the [Tutorials](../../tutorials).
 
 The examples below assume your component is connected to the connector **GP20** on the Grove Shield.
