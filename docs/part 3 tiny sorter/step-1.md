@@ -63,7 +63,8 @@ Take your time on the cutting and folding steps. Accurate and clean work makes a
   </video>
 </div>
 
-> **Note:** In this shot, they are using a pencil to crease the paper and make it easier to fold. This is highly recommended.
+{:.note}
+In this shot, they are using a pencil to crease the paper and make it easier to fold. This is highly recommended.
 
 ## 3. Tape it together
 <div>
@@ -72,7 +73,8 @@ Take your time on the cutting and folding steps. Accurate and clean work makes a
   </video>
 </div>
 
-> **Note:** The video shows how to build the sorter using an Arduino (a different microcontroller similar to our Raspberry Pi Pico ). Focus now on building the physical parts — connection differences are explained in a later step.
+{:.note}
+The video shows how to build the sorter using an Arduino (a different microcontroller similar to our Raspberry Pi Pico ). Focus now on building the physical parts — connection differences are explained in a later step.
 
 ## 4. Connect it
 <div>
@@ -81,7 +83,8 @@ Take your time on the cutting and folding steps. Accurate and clean work makes a
   </video>
 </div>
 
-> **Note:** Plug the servo motor into GP5.
+{:.note}
+Plug the servo motor into GP5.
 
 ## 5. Upload the Code
 You need two files on your Pi PicO:

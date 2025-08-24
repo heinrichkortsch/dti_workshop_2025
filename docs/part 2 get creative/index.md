@@ -36,13 +36,13 @@ You can use all hardware listed on the [Components](../components.md) page. Feel
 
 Here are some for practical, ready-to-use examples you can use as a starting point: 
 
-- [Idea 1](./idea-1.md): Alarm System
-- [Idea 2](./idea-2.md): Reaction Game 
-- [Idea 3](./idea-3.md): Cardboard Piano (Capacitive Touch)
-- [Idea 4](./idea-4.md): Energy Production with Water/Wind
-- [More Ideas](./idea-5.md) (short thought-starters)
+- [Idea 1](./idea-1): Alarm System
+- [Idea 2](./idea-2): Reaction Game 
+- [Idea 3](./idea-3): Cardboard Piano (Capacitive Touch)
+- [Idea 4](./idea-4): Energy Production with Water/Wind
+- [More Ideas](./idea-5) (short thought-starters)
 
-> **Let’s create and learn together — enjoy building, prototyping, and sharing your ideas!**
+**Let’s create and learn together — enjoy building, prototyping, and sharing your ideas!**
 
 ---
 
