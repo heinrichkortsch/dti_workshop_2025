@@ -36,7 +36,11 @@ Below you'll find the main steps for training your Tiny Sorter ML model with Tea
 - Go to [https://teachablemachine.withgoogle.com/](https://teachablemachine.withgoogle.com/).
 - Click on **“Get Started”**, then **“Image Project”**, and choose **“Standard Image Model”**.
   
-![Video: TM Video 1](assets/TM_video1.mov)
+<div>
+  <video autoplay muted loop playsinline title="TM Video 1" style="max-width: 100%; height: auto;">
+    <source src="./assets/TM_video1.mov" type="video/quicktime">
+  </video>
+</div>
 
 ---
 
@@ -45,7 +49,11 @@ Below you'll find the main steps for training your Tiny Sorter ML model with Tea
 - You’ll see two default “classes”—rename them to match your object types, e.g., "Item A” and “Item B”.
 - For our Tiny Sorter you have to created a third Class, e.g. "No Item", which we will use to train the model to recognize situations when there is no item to be sorted.
 
-![Video: TM Video 2](assets/TM_video2.mov)
+<div>
+  <video autoplay muted loop playsinline title="TM Video 2" style="max-width: 100%; height: auto;">
+    <source src="./assets/TM_video2.mov" type="video/quicktime">
+  </video>
+</div>
 
 ---
 
@@ -55,11 +63,19 @@ Below you'll find the main steps for training your Tiny Sorter ML model with Tea
 - Vary the angle, lighting, and distance as much as possible for best results!
 - Move the object around to help the computer “see” it in different positions and conditions. This works best if you upload and start the provided code to the Pico beacuse there is an idle movement from left to right. 
 
-![Video: TM Video 3](assets/TM_video3.mp4)
+<div>
+  <video autoplay muted loop playsinline title="TM Video 3" style="max-width: 100%; height: auto;">
+    <source src="./assets/TM_video3.mov" type="video/quicktime">
+  </video>
+</div>
 
 > As you can see in the video from the original Google project, they used Marshmallows and Cereals as their two Classes. 
 
-![Video: TM Video 4](assets/TM_video4.mp4)
+<div>
+  <video autoplay muted loop playsinline title="TM Video 4" style="max-width: 100%; height: auto;">
+    <source src="./assets/TM_video4.mov" type="video/quicktime">
+  </video>
+</div>
 
 > Remember to also train a third class with nothing in it (this class will ensure that your sorter runs).
 
@@ -71,7 +87,11 @@ Below you'll find the main steps for training your Tiny Sorter ML model with Tea
 - Your browser will process the images and build a lightweight neural network behind the scenes.
 - When done, you’ll see a live preview — insert up an object and watch the model try to classify it.
 
-![Video: TM Video 5](assets/TM_video5.mov)
+<div>
+  <video autoplay muted loop playsinline title="TM Video 5" style="max-width: 100%; height: auto;">
+    <source src="./assets/TM_video5.mov" type="video/quicktime">
+  </video>
+</div>
 
 ---
 
@@ -81,7 +101,11 @@ Below you'll find the main steps for training your Tiny Sorter ML model with Tea
 - Choose **“Upload my model”** (makes it available online).
 - Copy the provided **model link** to use with our sorting interface (you’ll need it later in Step 3).
 
-![Video: TM Video 6](assets/TM_video6.mp4)
+<div>
+  <video autoplay muted loop playsinline title="TM Video 6" style="max-width: 100%; height: auto;">
+    <source src="./assets/TM_video6.mov" type="video/quicktime">
+  </video>
+</div>
 
 ---
 

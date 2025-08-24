@@ -2,7 +2,7 @@
 layout: default
 title: "Time of Flight Sensor"
 parent: "Components"
-nav_order: 8
+nav_order: 15
 has_children: false
 ---
 

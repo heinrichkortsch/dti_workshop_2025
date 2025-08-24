@@ -8,7 +8,11 @@ parent: "Part 3: Machine Learning meets Microcontrollers"
 
 >Follow these steps to set up your Tiny Sorter. The process is also shown in the video below.
 
-![Video: Setup Video](assets/setup.mp4)
+<div>
+  <video autoplay muted loop playsinline title="Setup Video" style="max-width: 100%; height: auto;">
+    <source src="./assets/setup.mp4" type="video/mp4">
+  </video>
+</div>
 
 - **Mount the Tiny Sorter in front of the webcam**  
  Place your Tiny Sorter so that the objects and the sorter arm are clearly visible to the camera.

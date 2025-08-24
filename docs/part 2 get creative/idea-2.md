@@ -7,11 +7,13 @@ parent: "Part 2: Get Creative! Building & Prototyping"
 # Idea 2 - Reaction Game
 
 <div style="display: flex; align-items: center; gap: 20px;">
+  <div style="flex: 1;">
+    <video autoplay muted loop playsinline style="max-width: 75%; height: auto;">
+      <source src="./assets/reactiongame.mov" type="video/quicktime">
+    </video>
+  </div>
 
   <div style="flex: 1;">
-    <img src="./assets/reactiongame.mov" alt="Reaction Game Video" style="max-width: 75%; height: auto;">
-  </div>
-    <div style="flex: 1;">
     <p>
       This is a simple but exciting two-player reaction game. It lets you practice coding basic logic, working with input and output hardware, and competing with a friend—all with minimal setup.
     </p>
@@ -19,8 +21,9 @@ parent: "Part 2: Get Creative! Building & Prototyping"
       The video shows an advanced 4 Player build of the Reaction Game by 
       <a href="https://www.youtube.com/shorts/2sUVWSIK9SU">PenguinTutor</a>
     </div>
-   </div>    
+  </div>
 </div>
+
 
 
 ## What does the Reaction Game do?
@@ -56,12 +59,12 @@ Check the [Components](../components.md) page for what’s available.
 ## Basic Setup
 
 1. **Connect the red button** to GPIO pin GP1.
-2. **Connect the blue button** to GPIO pin GP16.
+2. **Connect the blue button** to GPIO pin GP5.
 3. **Connect the NeoPixel LED strip** (or compatible RGB LED) to GPIO pin GP9.
 4. **Plug in your microcontroller** (e.g. Raspberry Pi Pico) and connect it to your PC.
 5. Optionally: add extra modules (buzzer, display, more LEDs) for your own ideas.
 
-![Reaction Game Setup](./assets/Reaction%20Game.png)
+![Reaction Game Setup](./assets/reactiongame_1.png)
 >**Note:** In the picture above one button and one touch sensor were used as Inputs. Both work fine, but for fairness reasons it should be the same sensor for both players.
 
 ---
@@ -83,7 +86,7 @@ import random     # Generate random numbers for delay
 # Initialize buttons as digital inputs
 red_button = digitalio.DigitalInOut(board.GP1)
 red_button.direction = digitalio.Direction.INPUT
-blue_button = digitalio.DigitalInOut(board.GP16)
+blue_button = digitalio.DigitalInOut(board.GP5)
 blue_button.direction = digitalio.Direction.INPUT
 
 # Initialize NeoPixel RGB LED strip on GP9 with 6 LEDs

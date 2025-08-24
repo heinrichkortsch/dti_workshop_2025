@@ -2,7 +2,7 @@
 layout: default
 title: "Servo Motor"
 parent: "Components"
-nav_order: 9
+nav_order: 12
 has_children: false
 ---
 

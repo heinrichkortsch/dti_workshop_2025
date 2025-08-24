@@ -7,7 +7,11 @@ has_toc: false
 ---
 # Part 3: Machine Learning meets Microcontrollers -  "Tiny Sorter"
 
-![Video: Tiny Sorter](assets/video0.mp4)
+<div>
+  <video autoplay muted loop playsinline style="max-width: 100%; height: auto;">
+    <source src="./assets/video0.mp4" type="video/mp4">
+  </video>
+</div>
 
 Welcome to the “Tiny Sorter” project, an interactive machine learning–enabled sorting machine adapted for the DTI Summer School 2025!
 
