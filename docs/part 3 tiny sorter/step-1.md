@@ -42,8 +42,10 @@ Start by watching the videos below, which walks you through every step of the as
 3. **Tape and reinforce** key joints and walls as shown.
 4. **Assemble the chute and basket**, ensuring correct orientation (see video).
 5. **Attach the servo motor** in the pre-scored bracket (matches the provided servo shape).
-> **Tip:**  
-> Take your time on the cutting and folding steps. Accurate and clean work makes a big difference for a smooth-running Tiny Sorter!
+
+{:.highlight}
+**Tip:**  
+Take your time on the cutting and folding steps. Accurate and clean work makes a big difference for a smooth-running Tiny Sorter!
 
 
 

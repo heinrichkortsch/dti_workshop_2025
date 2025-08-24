@@ -6,7 +6,8 @@ parent: "Part 3: Machine Learning meets Microcontrollers"
 
 # Step 3 - Setup
 
->Follow these steps to set up your Tiny Sorter. The process is also shown in the video below.
+{:.highlight}
+Follow these steps to set up your Tiny Sorter. The process is also shown in the video below.
 
 <div>
   <video autoplay muted loop playsinline title="Setup Video" style="max-width: 100%; height: auto;">
@@ -54,8 +55,9 @@ parent: "Part 3: Machine Learning meets Microcontrollers"
 - **All done!**  
   - You are now set: present objects for sorting and watch how the web interface responds with live feedback from your model and Pico.
 
-> **Tip:**  
-> If something doesn’t work, check all connections, use Chrome(!), close Mu-Editor, and make sure both `code.py` and `boot.py` exist on the Pico.
+{:.highlight}
+**Tip:**  
+If something doesn’t work, check all connections, use Chrome(!), close Mu-Editor, and make sure both `code.py` and `boot.py` exist on the Pico.
 
 The Setup is all done? Let's test your Tiny Sorter.
 

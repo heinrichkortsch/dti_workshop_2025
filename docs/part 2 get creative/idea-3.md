@@ -17,13 +17,13 @@ parent: "Part 2: Get Creative! Building & Prototyping"
       This project is based on an <a href="https://www.kevsrobots.com/blog/chicken-nugget-piano.html">idea from Kevin McAleer</a>. As you can see in <a href="https://www.youtube.com/live/MWBl0E1Z8Ps?si=vECPxKjBB3sjbcC2&t=1765">his video</a>, with capacitive touch, you can turn anything into a sensor — even chicken nuggets!
     </div>
   </div>
-
 </div>
 
 
 ---
 
-> **Recommended:**  
+{:.highlight}
+**Recommended:**  
 Before you try this advanced piano example, please work through the [very basic capacitive touch sensor instruction](../components/12key-touch/12key-touch.html) and test them. It will give you the foundational knowledge you need to set up your Capacitive Touch sensor and understand touch detection, making it much easier to get this sound project working!
 
 ---
@@ -37,7 +37,9 @@ The cardboard piano uses “keys” made of metallic foil on a cardboard base. T
 ## How Capacitive Touch Works
 
 Capacitive touch sensors detect tiny changes in electrical properties (capacitance) when you touch a conductive surface. This principle is used in smartphone screens and touch lamps! The MPR121 sensor automatically records a “baseline” value when powered on.  
-> **Note:** The sensor establishes a “baseline” for capacitance on power-up. If you make changes to the connected objects or wiring after starting the system, you must restart the microcontroller (by saving your code again in the Mu-Editor) so the sensor can recalibrate for correct operation.
+
+{:.note}
+The sensor establishes a “baseline” for capacitance on power-up. If you make changes to the connected objects or wiring after starting the system, you must restart the microcontroller (by saving your code again in the Mu-Editor) so the sensor can recalibrate for correct operation.
 
 For more information, see our [Touch Sensor Overview](../components/12key-touch/12key-touch.html).
 
@@ -72,7 +74,8 @@ For more information, see our [Touch Sensor Overview](../components/12key-touch/
 4. **Run the code below on your Pico.** Make sure you have the .mp3 files loaded onto your Pico.
 
 
-> **Note:** The MPR121 establishes a capacitance baseline at startup. If you change the wiring, foil layout, or connected objects after power-on, restart the microcontroller (by saving the code.py in the Mu-Editor) so the sensor recalibrates properly.
+{:.note}
+The MPR121 establishes a capacitance baseline at startup. If you change the wiring, foil layout, or connected objects after power-on, restart the microcontroller (by saving the code.py in the Mu-Editor) so the sensor recalibrates properly.
 
 
 

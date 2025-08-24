@@ -45,7 +45,8 @@ Build, extend, remix—make it truly yours, and have fun exploring creative hard
   </video>
 </div>
 
-> In this build, I integrated buttons to start and stop the sorting process, as well as a dedicated button to reset the counters. Additionally, a display was added to show the live count for each class directly on the screen.
+{:.highlight}
+In this build, I integrated buttons to start and stop the sorting process, as well as a dedicated button to reset the counters. Additionally, a display was added to show the live count for each class directly on the screen.
 
 ---
 

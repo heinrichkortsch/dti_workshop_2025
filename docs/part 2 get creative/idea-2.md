@@ -65,7 +65,9 @@ Check the [Components](../components.md) page for what’s available.
 5. Optionally: add extra modules (buzzer, display, more LEDs) for your own ideas.
 
 ![Reaction Game Setup](./assets/reactiongame_1.png)
->**Note:** In the picture above one button and one touch sensor were used as Inputs. Both work fine, but for fairness reasons it should be the same sensor for both players.
+
+{:.note}
+In the picture above one button and one touch sensor were used as Inputs. Both work fine, but for fairness reasons it should be the same sensor for both players.
 
 ---
 
@@ -172,7 +174,8 @@ while True:
 
 ```
 
-> The original inspiration of this reaction game code can be found [here](https://id-studiolab.github.io/Digital-Interfaces/assignments/02-reaction-game/).
+{:.highlight}
+The original inspiration of this reaction game code can be found [here](https://id-studiolab.github.io/Digital-Interfaces/assignments/02-reaction-game/).
 
 
 ---

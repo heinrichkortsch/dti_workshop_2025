@@ -27,8 +27,8 @@ A simple, DIY machine will sort objects on a cardboard-based channel, using a we
 - How the browser (ML frontend) and the microcontroller communicate using the Web Serial API.
 - Insights into adapting and extending open-source educational projects.
 
-> **Note:**  
-> For this workshop, you will receive fully working CircuitPython code for the Raspberry Pi Pico. You do not need to port or rewrite code yourself. If you are interested and have programming experience, you are welcome to explore and modify the provided code as a bonus exercise!
+{:.note}
+For this workshop, you will receive fully working CircuitPython code for the Raspberry Pi Pico. You do not need to port or rewrite code yourself. If you are interested and have programming experience, you are welcome to explore and modify the provided code as a bonus exercise!
 
 ## Materials & Setup
 

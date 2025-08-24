@@ -10,18 +10,23 @@ parent: "Part 3: Machine Learning meets Microcontrollers"
 
 
  In this step, you'll see how to train a computer to tell objects apart—using nothing but your webcam and a website, no programming required!  
->
- We use [Google Teachable Machine](https://teachablemachine.withgoogle.com/), a free, web-based tool that lets anyone — even if you’ve never coded before — teach a machine learning (ML) model to recognize objects, sounds, or poses.  
-> Under the hood, Teachable Machine uses a simplified version of **[TensorFlow.js](https://www.tensorflow.org/js)**, a technology for running machine learning directly in your browser.
+
+{:.highlight}
+We use [Google Teachable Machine](https://teachablemachine.withgoogle.com/), a free, web-based tool that lets anyone — even if you’ve never coded before — teach a machine learning (ML) model to recognize objects, sounds, or poses.
+
+{:.highlight}
+Under the hood, Teachable Machine uses a simplified version of **[TensorFlow.js](https://www.tensorflow.org/js)**, a technology for running machine learning directly in your browser.
 
 **What’s a “machine learning model”?**  
  It’s like a super-powerful sorting rule. You show the computer lots of examples (e.g., photos of Block A, Block B …), and it “learns” how to tell them apart. Afterwards it can say things like: “I’m 95% sure this is Block A!”  
 
  In this workshop, our ML model looks at your webcam feed, decides which object it “sees,” and then sends that info to the Tiny Sorter for action.
->
-> If you're new to ML and interested, you can read this [beginner’s guide](https://developers.google.com/machine-learning/crash-course/ml-intro) to explore the main ideas. But you do not have to!
 
-> For the extra curious: Our model uses a so-called **neural network**, trained in real-time and run using JavaScript in the browser. Learn more about [neural nets](https://en.wikipedia.org/wiki/Artificial_neural_network).
+{:.highlight}
+If you're new to ML and interested, you can read this [beginner’s guide](https://developers.google.com/machine-learning/crash-course/ml-intro) to explore the main ideas. But you do not have to!
+
+{:.highlight}
+For the extra curious: Our model uses a so-called **neural network**, trained in real-time and run using JavaScript in the browser. Learn more about [neural nets](https://en.wikipedia.org/wiki/Artificial_neural_network).
 
 ---
 
@@ -69,7 +74,8 @@ Below you'll find the main steps for training your Tiny Sorter ML model with Tea
   </video>
 </div>
 
-> As you can see in the video from the original Google project, they used Marshmallows and Cereals as their two Classes. 
+{:.highlight}
+As you can see in the video from the original Google project, they used Marshmallows and Cereals as their two Classes. 
 
 <div>
   <video autoplay muted loop playsinline title="TM Video 4" style="max-width: 100%; height: auto;">
@@ -77,7 +83,8 @@ Below you'll find the main steps for training your Tiny Sorter ML model with Tea
   </video>
 </div>
 
-> Remember to also train a third class with nothing in it (this class will ensure that your sorter runs).
+{:.highlight}
+Remember to also train a third class with nothing in it (this class will ensure that your sorter runs).
 
 ---
 
