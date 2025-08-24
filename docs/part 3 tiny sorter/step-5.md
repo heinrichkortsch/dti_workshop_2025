@@ -52,7 +52,7 @@ Build, extend, remix—make it truly yours, and have fun exploring creative hard
 ## 💡 Need Support? Use the DTI Workshop Helper!
 
 Programming microcontrollers with new features can be challenging, especially under time pressure.  
-**Don’t struggle alone!** Use the [DTI Workshop Helper AI Tutor](https://chatgpt.com/g/g-6890968826808191b1bccc15d0e6a983-dti-workshop-helper) for:
+**Don’t struggle alone!** Use the [DTI Workshop Helper AI Tutor](https://www.perplexity.ai/search/dti-workshop-helper-T0eH2gNyRM2elfBJcprRJw) for:
 
 - Inspiration: See what’s possible and brainstorm new features.
 - Coding assistance: Get help writing or fixing CircuitPython/Arduino code.

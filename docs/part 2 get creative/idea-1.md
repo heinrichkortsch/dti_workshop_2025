@@ -63,8 +63,8 @@ Check the [Components](../components.md) page for available parts.
 
 ## Basic Setup
 
-1. **Connect the motion sensor** to a digital input pin (A0).
-2. **Connect the buzzer** to a digital output pin (A2).
+1. **Connect the motion sensor** to a  digital pin (GP1).
+2. **Connect the buzzer** to a pwm  pin (GP18).
 3. **Power and connect your board to your computer.**
 4. Other modules: Plug in LEDs, displays, or additional sensors as needed.
 
@@ -172,9 +172,9 @@ while True:
 
 There are several ways for you to get some help with your prototypes:
 
-1. We have trained a custom ChatGPT-Agent for you that will help you with any questions. This is especially helpful reagarding your python-code:
+1. We have trained a custom AI-Agent for you that will help you with any questions. This is especially helpful reagarding your python-code:
 
-    [DTI Workshop Helper](https://chatgpt.com/g/g-6890968826808191b1bccc15d0e6a983-dti-workshop-helper){: .btn}
+    [DTI Workshop Helper](https://www.perplexity.ai/search/dti-workshop-helper-T0eH2gNyRM2elfBJcprRJw){: .btn}
 
 2. For references on using specific components, jump to the Components section: 
 
