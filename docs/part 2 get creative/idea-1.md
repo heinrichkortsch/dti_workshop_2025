@@ -39,7 +39,7 @@ You can customize your alarm system with different sensors, lights, displays, or
 ## Components for the Base System
 
 - Microcontroller Board (Raspberry Pi Pico)
-- Motion Sensor (PIR sensor)
+- Motion Sensor (PIR sensor) (Alternatives: Time of Flight Distance Sensor OR 9DoF IMU Motion & Orientation Sensor)
 - Buzzer (Piezo)
 - Grove Cables
 
@@ -63,7 +63,7 @@ Check the [Components](../components.md) page for available parts.
 
 ## Basic Setup
 
-1. **Connect the motion sensor** to a  digital pin (GP1).
+1. **Connect the motion sensor** to a  digital pin (GP1). (If you do not have a motion sensor available, you could modify this project by using a Time of Flight Distance Sensor or the 9DoF IMU Motion & Orientation Sensor)
 2. **Connect the buzzer** to a pwm  pin (GP18).
 3. **Power and connect your board to your computer.**
 4. Other modules: Plug in LEDs, displays, or additional sensors as needed.
