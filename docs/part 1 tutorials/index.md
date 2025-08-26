@@ -25,7 +25,9 @@ If you are looking for quick references, you can jump directly to these tutorial
 [Tutorial 1](preparation/) - Preparation  
 [Tutorial 2](let-there-be-light/) - Let There Be Light!  
 [Tutorial 3](adding-inputs-and-outputs/) - Adding Inputs and Outputs  
+<!--
 [Tutorial 4](connecting-to-the-internet/) - Connecting To The Internet  
+-->   
 
 For references on using specific components, jump to the Components section:
 

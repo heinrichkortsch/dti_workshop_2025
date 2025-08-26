@@ -41,4 +41,6 @@ while True:
 {:.highlight}
 It is advisable to regularly back up the code stored on the `CIRCUITPY` drive to your computer. That way, you have something to fall back on should a memory loss occur or your Pi Pico W is misplaced.
 
+<!--
 [Next Tutorial](../connecting-to-the-internet/){: .btn .btn-blue }
+-->

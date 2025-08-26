@@ -47,7 +47,7 @@ This project has no final code, but here is a simple snippet to get you started.
 
 Remember to save your final script as `code.py`!
 
-```
+```python
 # --- Imports
 import time
 import board
