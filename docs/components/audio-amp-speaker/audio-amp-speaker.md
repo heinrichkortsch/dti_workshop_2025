@@ -56,7 +56,7 @@ while True:
 
 ## Advanced Usage
 
-Here, we'll use a button connected to **GP16 ** to cycle through three MP3 files.
+Here, we'll use a button connected to **GP16** to cycle through three MP3 files.
 
 ```python
 # --- Imports

@@ -2,7 +2,7 @@
 layout: default
 title: "Piezo Buzzer"
 parent: "Components"
-nav_order: 10
+nav_order: 8
 has_children: false
 ---
 
@@ -16,7 +16,10 @@ Can generate beeping sounds and melodies.
 This component is based on [Adafruit's Large Enclosed Piezo Element](https://www.adafruit.com/product/1739).
 
 {:.important}
-Make sure your component has a resistor in series with the Piezo Element (embedded in the black wire, as shown above.) If there is a resistor bridging the black with the red/yellow wire, then the component is configured as a [Knock Sensor](../knock-sensor/knock-sensor) and cannot be used to generate tones!
+Make sure your Piezo Element is wired to the **BUZZ** terminals on the Piezo Config Board, as pictured above. If the wires are connected to the **SENSE** terminals, the component is configured as a [Knock Sensor](../knock-sensor/knock-sensor) and cannot be used to generate tones!
+
+{:.highlight}
+<img src="assets/piezo-buzzer-passive-old.png" alt="Old Piezo Buzzer"  style="float: right;" width="220"/>An **older version** of the Piezo Buzzer **without** the configuration board is also available. It consists of a piezo element with a resistor in one of its leads, as pictured here. It is functionally identical with the new version and can be used the same way. 
 
 ---
 
